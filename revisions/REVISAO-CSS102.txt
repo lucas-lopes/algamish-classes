@@ -1,0 +1,714 @@
+01 - Create Visual Balance Using the text-align Property
+
+Alinhamento de texto: text-align
+
+h1 {
+    text-align: justify;
+    text-align: center;
+    text-align: right;
+    text-align: left; padrão
+}
+
+====================================================================================
+
+02 - Adjust the Width of an Element Using the width Property
+
+img {
+    width: 220px;
+}
+
+====================================================================================
+
+03 - Adjust the Height of an Element Using the height Property
+
+Conceito de relatividade em relação ao pai.
+
+img {
+  height: 20px; raiti
+}
+
+====================================================================================
+
+04 - Use the strong Tag to Make Text Bold
+
+Além de usar a tag <strong> é possível deixar um texto em negrito com a propriedade abaixo:
+
+font:
+
+font-weight
+font-family
+font-size
+font-style
+
+p {
+    font-weight: bold; ueit
+}
+
+====================================================================================
+
+05 - Use the u Tag to Underline Text
+
+Além de usar a tag <u> é possível deixar um texto sublinhado com a propriedade abaixo:
+
+a {
+    text-decoration: underline;
+    text-decoration: none; // Para remover o sublinhado de um link
+}
+
+====================================================================================
+
+06 - Use the em Tag to Italicize Text
+
+Além de usar a tag <em> é possível deixar um texto em itálico com a propriedade abaixo:
+
+p {
+    font-style: italic;
+}
+
+====================================================================================
+
+07 - Use the s Tag to Strikethrough Text
+
+Além de usar a tag <s> é possível deixar um texto "cancelado" ou com uma linha no meio da palavra com a propriedade abaixo:
+
+h4 {
+    text-decoration: line-through;
+}
+
+====================================================================================
+
+08 - Create a Horizontal Line Using the hr Element
+
+Tag <hr />
+
+====================================================================================
+
+09 - Adjust the background-color Property of Text
+
+Definindo background-color com rgba ao invés de rgb ou hexadecimal
+
+rgba stands for:
+  r = red
+  g = green
+  b = blue
+  a = alpha/level of opacity
+
+Possui o range entre 0 e 255.
+A opacity varia entre 0 e 1.
+
+h4 {
+    background-color: rgba(45, 45, 45, 0.1);
+}
+
+====================================================================================
+
+10 - Adjust the Size of a Header Versus a Paragraph Tag
+
+p {
+    font-size: 27px;
+    font-size: 27pt;
+}
+
+====================================================================================
+
+11 - Add a box-shadow to a Card-like Element
+
+offset-x (how far to push the shadow horizontally from the element),
+offset-y (how far to push the shadow vertically from the element),
+blur-radius,
+spread-radius
+color
+
+#thumbnail {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+====================================================================================
+
+12 - Decrease the Opacity of an Element
+
+Transparência de algum elemento onde totalmente transparente é 0 e o normal é 1.
+
+img {
+    opacity: 0.5;
+}
+
+====================================================================================
+
+13 - Use the text-transform Property to Make Text Uppercase
+
+Value	    Result
+lowercase	"transform me"
+uppercase	"TRANSFORM ME"
+capitalize	"Transform Me"
+initial	    Use the default value
+inherit	    Use the text-transform value from the parent element
+none	    Default: Use the original text
+
+p {
+    text-transform: uppercase;
+}
+
+====================================================================================
+
+14 - Set the font-size for Multiple Heading Elements
+
+h1 {
+    font-size: 68px;
+}
+
+====================================================================================
+
+15 - Set the font-weight for Multiple Heading Elements
+
+h2 {
+    font-weight: 400;
+}
+
+====================================================================================
+
+16 - Set the font-size of Paragraph Text
+
+p {
+    font-size: 16px;
+}
+
+====================================================================================
+
+17 - Set the line-height of Paragraphs
+
+Distanciamente entre as linhas de um parágrafo por exemplo:
+
+p {
+    line-height: 25px;
+}
+
+====================================================================================
+
+18 - Adjust the Hover State of an Anchor Tag
+
+Pseudo Classes -> :hover, :active
+
+a:hover {
+  color: red;
+}
+
+====================================================================================
+
+19 - Change an Element's Relative Position
+
+Todo elemento em HTML possui um modelo de caixa ou um modelo de bloco por padrão.
+Também conhecido como display - block, inline, inline-block, etc.
+Quando o elemento possui um display block ele oculpa todo o espaço lateral da tela.
+Quando o elemento possui um display inline ele oculpa apenas o espaço necessário da tela.
+
+É possível sobrescrever esse comportamento padrão usando posicionamentos: relative, absolute e etc.
+Quando o posicionamento é relative o elemento se comporta de acordo com o posicionamento do elemento pai.
+
+Usa-se as seguintes propriedades para mover o elemento da tela: top, right, bottom e left.
+
+p {
+  position: relative;
+  bottom: 10px;
+}
+
+PS: Vale lembrar que a leitura de um arquivo HTML ou CSS é feita de cima para baixo.
+
+====================================================================================
+
+20 - Move a Relatively Positioned Element with CSS Offsets
+
+Como visto acima, usar as propriedades top, right, bottom e left empurra o elemento para a posição inversa:
+
+Ex: top: 10px; -> Estou empurrando meu elemento 10px para baixo.
+Ex: left: 25px; -> Estou empurrando meu elemento 25px para direita.
+
+h2 {
+    position: relative;
+    left: 15px;
+    bottom: 10px;
+}
+
+====================================================================================
+
+21 - Lock an Element to its Parent with Absolute Positioning
+
+O position absolute se posiciona a partir do seu ancestral relativo mais próximo.
+É posicionado usando os offsets top, right, bottom, left.
+
+#searchbar {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+section {
+    position: relative;
+}
+
+<section>
+  <form>
+    <label for="search">Search:</label>
+    <input type="search" id="search" name="search">
+  </form>
+</section>
+
+====================================================================================
+
+22 - Lock an Element to the Browser Window with Fixed Positioning
+
+Não se move enquanto o usuário rola a tela.
+Se posiciona a partir do elemento relativo ancestral mais próximo.
+É posicionado usando os offsets top, right, bottom, left.
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #767676;
+}
+
+<header>
+    <h1>Welcome!</h1>
+    <nav id="navbar">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<p>I shift up when the #navbar is fixed to the browser window.</p>
+
+====================================================================================
+
+23 - Push Elements Left or Right with the float Property
+
+Começa a se comportar como um elemento inline, pois passa a ser um elemento "magro" limitado ao width que passamos.
+Também se comporta de forma relativa ao pai.
+
+#left {
+    float: left;
+    width: 50%;
+}
+#right {
+    float: right;
+    width: 40%;
+}
+
+====================================================================================
+
+24 - Change the Position of Overlapping Elements with the z-index Property
+
+Quando usamos um position frequentemente um elemento pode ficar sobre o outro.
+Especifica a ordem de quem ficará por cima de quem.
+
+div {
+    position: absolute;
+    z-index: 0;
+}
+
+====================================================================================
+
+25 - Center an Element Horizontally Using the margin Property
+
+Podemos centralizar um elemento usando margens desde que o elemento seja block (display block).
+
+div {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    margin: auto;
+}
+
+====================================================================================
+
+26 - Learn about Complementary Colors
+
+Teoria das cores é o assunto profundo.
+Vamos aprender mais sobre esse assunto nos próximos cursos mais focados em layout.
+Cores complementares são aquelas que são opostas uma da outra.
+Se usadas juntas uma acaba neutralizando a outra deixando a cor mais neutra.
+Se utilizadas lado a lado passam um imagem vibrante e as vezes incômoda.
+
+red (#FF0000) and cyan (#00FFFF)
+green (#00FF00) and magenta (#FF00FF)
+blue (#0000FF) and yellow (#FFFF00)
+
+Cores primárias - red, blue, green.
+Cores secundárias - cyan (G + B), magenta (R + B) and yellow (R + G).
+
+.blue {
+    background-color: blue;
+}
+.yellow {
+    background-color: yellow;
+}
+
+====================================================================================
+
+27 - Learn about Tertiary Colors
+
+Cores secundárias - cyan (G + B), magenta (R + B) and yellow (R + G).
+Cores terciárias é o resultado das cores primárias + cores secundárias.
+
+.orange {
+    background-color: #FF7F00;
+}
+
+.cyan {
+    background-color: #00FFFF;
+}
+
+.raspberry {
+    background-color: #FF007F;
+}
+
+====================================================================================
+
+28 - Adjust the Color of Various Elements to Complementary Colors
+
+Cor dominante é a que será a cor predominando. Qual a cor predominante do Instagram?
+A cor complementar é a que vai auxiliar a cor predominante deixando ela mais suave.
+
+====================================================================================
+
+29 - Adjust the Hue of a Color
+
+Hue - Matiz - Cor - Dado em grau começando do centro que 0 a 360 graus.
+Saturation - Saturação - quantidade de cinza em uma cor - 100% é completamento saturado.
+Lightness - Brilho - quantidade de branco ou preto em uma cor - 50% é o normal
+
+A propriedade hsl() altera esses valores em uma cor.
+
+Color	    HSL
+red	        hsl(0, 100%, 50%)
+yellow	    hsl(60, 100%, 50%)
+green	    hsl(120, 100%, 50%)
+cyan	    hsl(180, 100%, 50%)
+blue	    hsl(240, 100%, 50%)
+magenta	    hsl(300, 100%, 50%)
+
+.green {
+    background-color: hsl(120, 100%, 50%);
+}
+
+.cyan {
+    background-color: hsl(180, 100%, 50%);
+}
+
+.blue {
+    background-color: hsl(240, 100%, 50%);
+}
+
+====================================================================================
+
+30 - Adjust the Tone of a Color
+
+====================================================================================
+
+31 - Create a Gradual CSS Linear Gradient
+
+direction: 90deg (from left to right) ou 45deg (from bottom left to top right)
+
+div {
+    background: linear-gradient(gradient_direction, color 1, color 2, color 3, ...);
+}
+
+div {
+    background: linear-gradient(35deg, #CCFFFF, #FFCCCC);
+}
+
+====================================================================================
+
+32 - Use a CSS Linear Gradient to Create a Striped Element
+
+A função repeating-linear-gradient() é parecida com a linear-gradient() com a diferença que ocorre uma repetição do padrão.
+
+0px [yellow -- blend -- blue] 40px [green -- blend -- red] 80px
+
+div {
+    background: repeating-linear-gradient(
+      90deg,
+      yellow 0px,
+      blue 40px,
+      green 40px,
+      red 80px
+    );
+}
+
+====================================================================================
+
+33 - Create Texture by Adding a Subtle Pattern as a Background Image
+
+body {
+    background: url(https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png);
+
+}
+
+====================================================================================
+
+34 - Use the CSS Transform scale Property to Change the Size of an Element
+
+Pega o tamanho definido em width e hight e multiplicado pelo tamanho dentro de scale.
+
+p {
+  transform: scale(2);
+}
+
+====================================================================================
+
+35 - Use the CSS Transform scale Property to Scale an Element on Hover
+
+p:hover {
+  transform: scale(2.1);
+}
+
+====================================================================================
+
+36 - Use the CSS Transform Property skewX to Skew an Element Along the X-Axis
+
+skew - enviesamento
+X-axis - Eixo X da tela conforme aprendemos na matemática.
+
+p {
+  transform: skewX(-32deg);
+}
+
+====================================================================================
+
+37 - Use the CSS Transform Property skewY to Skew an Element Along the Y-Axis
+
+skew - enviesamento
+Y-axis - Eixo Y da tela conforme aprendemos na matemática.
+
+p {
+  transform: skewY(-32deg);
+}
+
+====================================================================================
+
+38 - Create a Graphic Using CSS
+
+O exemplo da lua com box-shadow e border-radius.
+É possível criar muitas formas geométricas transformando elementos HTML apenas com CSS.
+
+====================================================================================
+
+39 - Create a More Complex Shape Using CSS and HTML
+
+Exemplo do coração.
+pseudo-elemento - É usado para inserir alguma coisa antes ou depois de um elemento selecionado (seletor).
+
+.heart::before {
+  content: "";
+  background-color: yellow;
+  border-radius: 25%;
+  position: absolute;
+  height: 50px;
+  width: 70px;
+  top: -50px;
+  left: 5px;
+}
+
+content - propriedade usada para inserir alguma coisa antes ou depois. Ela é obrigatória.
+
+.heart {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: pink;
+    height: 50px;
+    width: 50px;
+    transform: rotate(-45deg);
+}
+.heart::after {
+    background-color: pink;
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0px;
+    left: 25px;
+}
+.heart::before {
+    content: "";
+    background-color: pink;
+    border-radius: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -25px;
+    left: 0px;
+}
+
+====================================================================================
+
+40 - Learn How the CSS @keyframes and animation Properties Work
+
+Existem 8 propriedades para animação usando a regra @keyframes:
+
+animation-name - Seta o nome da animação.
+animation-duration - Seta o tempo da animação.
+animation-fill-mode - especifica o que fazer quando a animação termina.
+animation-iteration-count - Controla quantas vezes a animação será executada.
+animation-timing-function - Controla a velocidade da duração da animação. Se vai mais rápido ou devagar.
+
+#rect {
+    animation-name: rainbow;
+    animation-duration: 4s;
+}
+
+@keyframes rainbow {
+    0% {
+      background-color: blue;
+    }
+    50% {
+      background-color: green;
+    }
+    100% {
+      background-color: yellow;
+    }
+}
+
+====================================================================================
+
+41 - Use CSS Animation to Change the Hover State of a Button
+
+img:hover {
+    animation-name: width;
+    animation-duration: 500ms;
+}
+
+@keyframes width {
+    100% {
+      width: 40px;
+    }
+}
+
+====================================================================================
+
+42 - Modify Fill Mode of an Animation
+
+animation-fill-mode - especifica o que fazer quando a animação termina;
+
+button:hover {
+    animation-name: background-color;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes background-color {
+    100% {
+      background-color: #4791d0;
+    }
+}
+
+====================================================================================
+
+43 - Create Movement Using CSS Animation
+
+@keyframes rainbow {
+  0% {
+    background-color: blue;
+    top: 0px;
+  }
+  50% {
+    background-color: green;
+    top: 50px;
+  }
+  100% {
+    background-color: yellow;
+    top: 0px;
+  }
+}
+
+====================================================================================
+
+44 - Create Visual Direction by Fading an Element from Left to Right
+
+Exemplo da bolinha.
+
+====================================================================================
+
+45 - Animate Elements Continually Using an Infinite Animation Count
+
+animation-iteration-count - Controla quantas vezes a animação será executada;
+
+Ex: animation-iteration-count: 3;
+
+Para executar continuamente basta usar o valor infinite.
+
+====================================================================================
+
+46 - Make a CSS Heartbeat using an Infinite Animation Count
+
+Exemplo do coração batendo.
+
+====================================================================================
+
+47 - Animate Elements at Variable Rates
+
+Exemplo das estrelas piscando.
+
+====================================================================================
+
+48 - Animate Multiple Elements at Variable Rates
+
+Exemplo das estrelas piscando de forma aleatória.
+
+====================================================================================
+
+49 - Change Animation Timing with Keywords
+
+animation-timing-function - Controla a velocidade da duração da animação. Se vai mais rápido ou devagar.
+
+ease - Começa devagar, acelera no meio e desacelera no final.
+ease-out - Começa rápido e vai desacelerando.
+ease-in - Começa lento e vai acelerando.
+linear - Aplica a mesma velocidade do começo ao fim.
+
+Os elementos podem até partir rápido em relação a velocidade, mas sempre chegarão juntos no final.
+Isso acontece porque a animation-duration dos dois é de 2 segundos.
+
+====================================================================================
+
+50 - Learn How Bezier Curves Work
+
+https://pt.stackoverflow.com/questions/346701/como-funciona-o-cubic-bezier-em-anima%C3%A7%C3%B5es-com-css#:~:text=A%20Curva%20de%20B%C3%A9zier%20%C3%A9,comportamento%20apresentado%20pelos%20pontos%20interpolados.
+
+Basicamente a curva de Bezier é a explicação matemática para o mesmo comportamento da função animation-timing-function.
+Os seguinte parâmetros que passamos: ease, ease-out, ease-in, linear.
+Podemos passar via o Conceito da curva de Bezier através da seguinte função: cubic-bezier()
+
+animation-timing-function: cubic-bezier(0.250, 0.35, 0.45, 0.155);
+
+====================================================================================
+
+51 - Use a Bezier Curve to Move a Graphic
+
+Ao alterar o primeiro parâmetro e o último podemos executar o mesmo comportamento de ease-out por exemplo.
+
+Ex: animation-timing-function: cubic-bezier(0, 0, 0.58, 1);
+Ex: animation-timing-function: cubic-bezier(0, 1, 0.58, 2);
+
+No exemplo acima usando as curvas de Bezier, o primeiro parâmetro informa que o movimento vai começar em 0 e vai acabar em 1, o que vem no meio é a variação da curva.
+
+Ex: animation-timing-function: cubic-bezier(0, 0, 0.58, 1);
+
+O exemplo acima é de um comportamento Linear.
+
+====================================================================================
+
+52 - Make Motion More Natural Using a Bezier Curve
+
+Em resumo podemos usar os parâmetros simples para uma animação simples, porém se for preciso uma aceleração ou desaceleração personalizada será preciso usar as curvas de Bezier para isso.
+
+====================================================================================
+
+pseudo-elementos
+pseudo-atributos
