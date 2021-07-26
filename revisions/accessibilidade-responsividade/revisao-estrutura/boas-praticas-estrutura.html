@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 0;
+            background-color: #f9f9f9;
+        }
+
+        section {
+            background-color: #232b29;
+            height: 130px;
+            width: 100%;
+        }
+
+        section, figure, header, section > div, nav, main, aside, footer {
+            float: left;
+        }
+
+        section figure {
+            width: 20%;
+        }
+
+        section img {
+            margin: auto;
+            display: block;
+            width: 35%;
+        }
+
+        header {
+            width: 50%;
+        }
+
+        header > h1 {
+            text-align: center;
+            font-size: 30pt;
+            padding: 9px 0;
+            color: #FFF;
+        }
+
+        section > div {
+            width: 24%;
+            padding: 47px 0;
+        }
+
+        input {
+            height: 30px;
+            width: 80%;
+        }
+
+        nav {
+            width: 18%;
+            background-color: #bbbfc1;
+        }
+
+        main {
+            width: 55%;
+            background-color: #bbbfc1;
+            margin-left: 10px;
+        }
+
+        main img, aside img {
+            width: 100%;
+        }
+
+        main p {
+            padding: 0 40px;
+            text-align: justify;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        aside {
+            width: 25.6%;
+            background-color: #bbbfc1;
+            margin-left: 10px;
+        }
+
+        ul {
+            padding-inline-start: 0;
+        }
+
+        li {
+            height: 30px;
+            background-color: #232b29;
+            margin-bottom: 5px;
+            padding-top: 13px;
+            list-style: none;
+            color: #FFF;
+            text-align: center;
+        }
+
+        figcaption {
+            text-align: center;
+        }
+
+        footer {
+            width: 100%;
+            height: 60px;
+            text-align: center;
+            background-color: #232b29;
+            color: #FFF;
+            margin-top: 10px;
+            padding-top: 6px;
+        }
+
+        @media (max-width: 600px) {
+            section, figure, header, section > div, nav, main, aside, footer {
+                float: none;
+            }
+
+            input {
+                display: none;
+            }
+
+            section {
+                height: 190px;
+            }
+
+            section figure, header, nav, main, aside {
+                width: auto;
+            }
+
+            section figure, header {
+                margin: 0;
+                padding: 20px 0 0;
+            }
+
+            section figure > img {
+                width: 20%;
+            }
+
+            header > h1 {
+                padding: 0;
+                font-size: 29pt;
+                margin: 0;
+            }
+
+            ul {
+                margin: 4px;
+            }
+
+            main, aside {
+                margin: 0 0 4px;
+                padding: 1px 0;
+            }
+
+            footer {
+                margin-top: 4px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <figure>
+            <img src="./img/heart.png" alt="Coração Icon">
+        </figure>
+
+        <header>
+            <h1>Bandeiras Nacionais</h1>
+        </header>
+
+        <div>
+            <form>
+                <label for="search">
+                    <input type="text" name="search" id="search" placeholder="Pesquisar assunto">
+                </label>
+            </form>
+        </div>
+    </section>
+ 
+    <nav>
+        <ul>
+            <li>Brasil</li>
+            <li>EUA</li>
+            <li>Argentina</li>
+            <li>México</li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Meu País: Brasil</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+        <figure>
+            <img src="./img/bandeira-do-brasil.png" alt="Bandeira do Brasil">
+        </figure>
+
+        <h2>Características do País</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </main>
+
+    <aside>
+        <h2>Bandeiras nacionais</h2>
+
+        <figure>
+            <img src="./img/bandeira-argentina.png" alt="Bandeira da Argentina">
+            <figcaption>Bandeira Nacional da Argentina</figcaption>
+        </figure>
+
+        <figure>
+            <img src="./img/bandeira-mexico.png" alt="Bandeira do México">
+            <figcaption>Bandeira Nacional do México</figcaption>
+        </figure>
+
+        <figure>
+            <img src="./img/bandeira-usa.png" alt="Bandeira USA">
+            <figcaption>Bandeira Nacional dos EUA</figcaption>
+        </figure>
+    </aside>
+
+    <footer>
+        <p>Seu País e suas Histórias</p>
+    </footer>
+</body>
+</html>

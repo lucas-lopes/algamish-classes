@@ -1,0 +1,15 @@
+Semântica:
+
+https://www.w3schools.com/html/html5_semantic_elements.asp
+
+Layout com semântica:
+
+https://www.w3schools.com/html/html_layout.asp
+
+Media Queries examples:
+
+https://www.w3schools.com/css/css3_mediaqueries_ex.asp
+
+Reponsividade:
+
+https://www.w3schools.com/css/css_rwd_intro.asp

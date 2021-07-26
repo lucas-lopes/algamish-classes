@@ -1,0 +1,209 @@
+1 - Add a Text Alternative to Images for Visually Impaired Accessibility
+
+Importância do atributo alt em imagens.
+
+================================================================
+
+2 - Know When Alt Text Should be Left Blank
+
+Quando o conteúdo ao redor da imagem explica bem a imagem o alt pode ser colocado com o valor vazio
+
+================================================================
+
+3 - Use Headings to Show Hierarchical Relationships of Content
+
+* É recomendado que exista apenas um elemento h1 em toda a página.
+* Isso vai informar aos leitores de tela que aquele é o título principal.
+* E a partir dele será iniciado os subtítulos de forma hierarquica.
+* É uma boa prática seguir a sequência de h1 até h6 para não confundir o leitor de tela.
+
+================================================================
+
+4 - Jump Straight to the Content Using the main Element
+
+* Existem muitas tags semânticas como: main, header, footer, nav, article, and section e outras.
+* Elas são renderizadas como uma div, porém com o significado apropriado.
+* A tag main é usada para o conteúdo principal.
+* Ela deve ser usada apenas uma vez na página.
+
+================================================================
+
+5 - Wrap Content in the article Element
+
+* A tag article é usada em pedaços de textos individuais, que não faz relação com outros pontos do site.
+* A tag pode ser usada em tópicos de blog, posts de fórum, ou artigo de notícias.
+* Podem ser aninhados dentro de main.
+* Possui um comportamento parecido com a tag section, porém como explicado a primeira é para partes isoladas do site já a segunda é para agrupar vários tópicos que fazem parte da mesma ideia/tema
+* Uma section pode estar aninhado a um article como o seguinte exemplo:
+
+O livro - <article>
+Os capítulos do livro - <section>
+Se o assunto dentro de article não estiver relacionado - <div>
+
+================================================================
+
+6 - Make Screen Reader Navigation Easier with the header Landmark
+
+* A tag header facilita a navegação.
+* E destaca a informação introdutória destacado no h1
+
+================================================================
+
+7 - Make Screen Reader Navigation Easier with the nav Landmark
+
+* A tag nav é usada para menus e pode ser usada dentro da tag header (apenas se for necessário).
+
+================================================================
+
+8 - Make Screen Reader Navigation Easier with the footer Landmark
+
+* A tag footer é usada para menus também, porém para links extras e informações no rodapé.
+
+================================================================
+
+9 - Improve Accessibility of Audio Content with the audio Element
+
+<audio id="meowClip" controls>
+  <source src="audio/meow.mp3" type="audio/mpeg">
+  <source src="audio/meow.ogg" type="audio/ogg">
+</audio>
+
+================================================================
+
+10 - Improve Chart Accessibility with the figure Element
+
+* A tag figcaption é um texto alternativo usado junto a tag figure para descrever uma imagem.
+* A tag figure é usada para imagens e gráficos podendo ser usada junto a figcaption internamente.
+
+================================================================
+
+11 - Improve Form Field Accessibility with the label Element
+
+* A tag label é usada em conjunto com a tag input e é uma boa prática usar o atributo for da tag label.
+* Esse atributo for faz referência ao atributo id de input fazendo o vínculo entre os dois.
+* Ao clicar no label o cursor irá imediatamente ao input relacionado.
+
+<form>
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name">
+</form>
+
+================================================================
+
+12 - Wrap Radio Buttons in a fieldset Element for Better Accessibility
+
+* A tag fieldset cerca o grupo de botões input type radio.
+* Em conjunto existe a tag legend que explica o que aqueles campos fazem.
+* Caso já esteja claro a função do bloco não é necessário usar o legend.
+* Os leitores de tela usam o legend para entender se aquele bloco é o que o usuário precisa.
+
+<form>
+  <fieldset>
+    <legend>Choose one of these three items:</legend>
+    <input id="one" type="radio" name="items" value="one">
+    <label for="one">Choice One</label><br>
+    <input id="two" type="radio" name="items" value="two">
+    <label for="two">Choice Two</label><br>
+    <input id="three" type="radio" name="items" value="three">
+    <label for="three">Choice Three</label>
+  </fieldset>
+</form>
+
+================================================================
+
+13 - Add an Accessible Date Picker
+
+* A tag input possui vários tipos de elementos definido a partir do type.
+* O type padrão para o input é o text.
+* Para datas existe o type date que insere um calendário na tag input.
+
+<label for="input1">Enter a date:</label>
+<input type="date" id="input1" name="input1">
+
+================================================================
+
+14 - Standardize Times with the HTML5 datetime Attribute
+
+* Outra forma de inserir data é atrvés da tag time.
+* A tag time possui o atributo datetime para inserir uma informação de hora no elemento.
+* Não há uma modificação visível, porém existe uma amarração entre a data informada no texto e o atributo datetime.
+
+<p>Master Camper Cat officiated the cage match between Goro and Scorpion 
+  <time datetime="2013-02-13">last Wednesday</time>, which ended in a draw.</p>
+
+================================================================
+
+15 - Make Elements Only Visible to a Screen Reader by Using Custom CSS
+
+* Até aqui não usamos CSS. Isso prova a importancia de criar um HTML bem estruturado e com acessibilidade.
+* Quando precisamos apresentar um gráfico os leitores de tela tem dificuldade em ler essa informação.
+* Por isso podemos criar uma tabela representando o conteúdo do gráfico em função dos leitores de tela.
+* Essa técnica com CSS ajuda a ocultar essa tabela do usuário (que não interessa pra ele), porém é útil para o leitor de tela entender a informação.
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+  overflow: hidden;
+}
+
+================================================================
+
+16 - Improve Readability with High Contrast Text
+
+* Baixo contraste entre um background e o conteúdo é uma má prática.
+* Exemplo de contraste entre cores: https://contrastchecker.com/
+
+================================================================
+
+17 - Avoid Colorblindness Issues by Using Sufficient Contrast
+
+* É uma boa prática evitar o uso de cores com muito brilho isoladamente.
+* Uma possibilidade é mesclar uma cor de brilho com uma cor mais escura.
+* É possivel ajustar o brilho de uma cor através da propriedade hsl(). 
+
+================================================================
+
+18 - Avoid Colorblindness Issues by Carefully Choosing Colors that Convey Information
+
+* Mais uma aula falando para ter atenção a escolha das cores e evitar usar por exemplo duas cores com muito brilho.
+
+================================================================
+
+19 - Give Links Meaning by Using Descriptive Link Text
+
+* Evite usar "clique aqui" por exemplo. Dê nomes com significado para os links. 
+
+================================================================
+
+20 - Make Links Navigable with HTML Access Keys
+
+* Podemos inserir atalhos para acessar conteúdos específicos de nosso site.
+* Para isso usamos o atributo accesskey que pode ser usado junto a qualquer tag.
+* O valor desse atributo deve ser apenas um caractere podendo ser letra ou número.
+* Para usar o atalho é precisa usar [ALT] + accesskey.
+* É recomendado usar em elementos interativos como links, butões e formulários.
+
+<button accesskey="b">Important Button</button>
+
+================================================================
+
+21 - Use tabindex to Add Keyboard Focus to an Element
+
+* Outra forma de aplicar navegação via teclado é usando o atributo tabindex.
+* O elemento que recebe esse atributo recebera o focus quando o usuário usar o tab do teclado.
+
+<div tabindex="0">I need keyboard focus!</div>
+
+================================================================
+
+22 - Use tabindex to Specify the Order of Keyboard Focus for Several Elements
+
+* Além do comportamento padrão do tabindex, é possível definir uma ordem a ser seguida.
+* Para isso usa-se o valor de 1 até o necessário como 2, 3, 4, etc.
+* É bom ter cautela ao usar esse atributo, pois pode confundir o usuário.
+
+<div tabindex="1">I get keyboard focus, and I get it first!</div>
+<div tabindex="2">I get keyboard focus, and I get it second!</div>

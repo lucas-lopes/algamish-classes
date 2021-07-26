@@ -1,0 +1,381 @@
+
+CSS Flexbox
+
+Flexbox is a powerful, well-supported layout method that was introduced with the latest version of CSS, CSS3. With flexbox, it's easy to center elements on the page and create dynamic user interfaces that shrink and expand automatically.
+
+In this course, you'll learn the fundamentals of flexbox and dynamic layouts by building a Twitter card.
+
+========================================================================================
+
+1 - Use display: flex to Position Two Boxes
+
+div {
+    display: flex;
+}
+
+========================================================================================
+
+2 - Add Flex Superpowers to the Tweet Embed
+
+* Exemplo de uso com a seguinte propriedade:
+
+div {
+    display: flex;
+}
+
+========================================================================================
+
+3 - Use the flex-direction Property to Make a Row
+
+* Adicionar o display flex torna o elemento em um container flexível.
+* É possível alinhar os filhos desse container em linhas e colunas.
+* Para definir se o alinhamento será por linha ou coluna usamos a propriedade flex-direction no elemento pai.
+* Os valores possíveis são row, column (mais usados). E outros como row-reverse e column-reverse.
+* O valor padrão para essa propriedade é o row.
+
+div {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+========================================================================================
+
+4 - Apply the flex-direction Property to Create Rows in the Tweet Embed
+
+* Exemplo de uso com a seguinte propriedade:
+
+div {
+    display: flex;
+    flex-direction: row;
+}
+
+========================================================================================
+
+5 - Use the flex-direction Property to Make a Column
+
+* Para alinhar um elemento verticalmente usamos a propriedade flex-direction com o valor column.
+
+div {
+    display: flex;
+    flex-direction: column;
+}
+
+========================================================================================
+
+6 - Apply the flex-direction Property to Create a Column in the Tweet Embed
+
+* Exemplo de uso com a seguinte propriedade:
+
+div {
+    display: flex;
+    flex-direction: column;
+}
+
+========================================================================================
+
+7 - Align Elements Using the justify-content Property
+
+* Existe um conceito chamado de mais-axis e cross-axis como ilustrado na imagem abaixo:
+
+https://www.w3.org/TR/css-flexbox-1/images/flex-direction-terms.svg
+
+* A propriedade justify-content é utilizada para alinhar o eixo main axis.
+* As direções dos itens em row, são alinhados da esquerda para direita.
+* As direções dos itens em column, são alinhados do topo para baixo.
+* O main axis de row é da esquerda para direita e da column é de cima para baixo.
+* Para alinhar o item usamos a propriedade justify-content.
+* As opções de alinhamento para justify-content são:
+    * center - Centraliza o item no meio do container.
+    * flex-start - Alinha a esquerda se for row ou no topo se for column.
+    * flex-end - Alinha a direita se for row ou no fundo se for column.
+    * space-between - O primeiro item e o último são alinhados a esquerda e direita, e o espaço que sobra entre eles são divididos entre os demais.
+    * space-around - Todos os itens dividem o espaço total, porém o início e o final recebem a metade do tamanho que os itens receberam.
+    * space-evely - O tamanho total do container é separado uniformemente entre todos os itens existentes.
+
+#container {
+    display: flex;
+    justify-content: center;
+}
+
+========================================================================================
+
+8 - Use the justify-content Property in the Tweet Embed
+
+* Exemplo de uso com a seguinte propriedade:
+
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+========================================================================================
+
+9 - Align Elements Using the align-items Property
+
+* A propriedade align-items é utilizada para alinhar o eixo cross axis.
+* A propriedade align-items possui os seguintes valores para alinhamento:
+    * flex-start - Alinha a esquerda se for column ou no topo se for row.
+    * flex-end - Alinha a direita se for column ou no fundo se for row.
+    * center - Centraliza o item no meio do container.
+    * stretch - Preenche o container por completo do topo ao fundo se for row e da esquerda para direita se for column. Esse é o valor padrão da propriedade.
+    * baseline - Alinha os itens baseado no texto, na linha de baixo do texto.
+
+div {
+    display: flex;
+    align-items: center;
+}
+
+========================================================================================
+
+10 - Use the align-items Property in the Tweet Embed
+
+* Exemplo de uso com a seguinte propriedade:
+
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+========================================================================================
+
+11 - Use the flex-wrap Property to Wrap a Row or Column
+
+* A propriedade flex-wrap é utilizada para deixar os item com tamanho flexível dentro do container.
+* Baseado no tamanho de cada item é feito a divisão dos items no espaço disponível do container.
+* Isso acontece porque a valor padrão desta propriedade é nowrap, ou seja, não quebre a linha e tente ajustar os tamanhos dos itens.
+* No entanto é possível alterar esses comportamentos. Segue abaixo os valores possíveis para essa propriedade:
+    * nowrap - Valor padrão caso essa propriedade não seja passada. Se comporta como explicado acima.
+    * wrap - Vai levar em consideração o tamanho do container e vai encaixar os itens apenas no tamanho do container disponível.
+    * wrap-reverse - Se comporta semelhante ao wrap, porém de forma invertida.
+
+<style>
+  #box-container {
+    background: gray;
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+  }
+  #box-1 {
+    background-color: dodgerblue;
+    width: 25%;
+    height: 50%;
+  }
+
+  #box-2 {
+    background-color: orangered;
+    width: 25%;
+    height: 50%;
+  }
+  #box-3 {
+    background-color: violet;
+    width: 25%;
+    height: 50%;
+  }
+  #box-4 {
+    background-color: yellow;
+    width: 25%;
+    height: 50%;
+  }
+  #box-5 {
+    background-color: green;
+    width: 25%;
+    height: 50%;
+  }
+  #box-6 {
+    background-color: black;
+    width: 25%;
+    height: 50%;
+  }
+</style>
+
+<div id="box-container">
+  <div id="box-1"></div>
+  <div id="box-2"></div>
+  <div id="box-3"></div>
+  <div id="box-4"></div>
+  <div id="box-5"></div>
+  <div id="box-6"></div>
+</div>
+
+========================================================================================
+
+12 - Use the flex-shrink Property to Shrink Items
+
+* Todas as propriedades que vimos até aqui são para o container, porém existem muitas propriedades para os itens.
+* A propriedade flex-shrink é usada para encolher um elemento caso o tamanho total dos itens seja maior que o container.
+* O maior valor da propriedade flex-shrink será o elemento encolhido para se adaptar ao tamanho do container.
+* Se por exemplo um item possui flex-shrink com valor 2, o tamanho dele será diminuído duas vezes, se o valor 3 será diminuído 3 vezes.
+* Essa diferença será acrescentada ao outro item.
+
+<style>
+  #box-container {
+    display: flex;
+    height: 500px;
+  }
+  #box-1 {
+    background-color: dodgerblue;
+    width: 100%;
+    height: 200px;
+    flex-shrink: 1;
+  }
+
+  #box-2 {
+    background-color: orangered;
+    width: 100%;
+    height: 200px;
+    flex-shrink: 1;
+  }
+</style>
+
+<div id="box-container">
+  <div id="box-1"></div>
+  <div id="box-2"></div>
+</div>
+
+========================================================================================
+
+13 - Use the flex-grow Property to Expand Items
+
+* A propriedade flex-grow é exatamente o contrário da flex-shrink, ela é para expandir o item.
+* A propriedade flex-grow é usada para expandir um elemento.
+* O maior valor da propriedade flex-grow será o elemento expandido.
+* Se por exemplo um item possui flex-grow com valor 2, o tamanho dele será aumentado duas vezes, se o valor 3 será aumentado 3 vezes.
+* Essa diferença será diminuida ao outro item.
+
+<style>
+  #box-container {
+    display: flex;
+    height: 500px;
+  }
+
+  #box-1 {
+    background-color: dodgerblue;
+    height: 200px;
+    flex-grow: 1;
+  }
+
+  #box-2 {
+    background-color: orangered;
+    height: 200px;
+    flex-grow: 2;
+  }
+</style>
+
+<div id="box-container">
+  <div id="box-1"></div>
+  <div id="box-2"></div>
+</div>
+
+========================================================================================
+
+14 - Use the flex-basis Property to Set the Initial Size of an Item
+
+* Especifica o valor inicial antes de considerar o flex-shrink e flex-grow.
+
+<style>
+  #box-container {
+    display: flex;
+    height: 500px;
+  }
+
+  #box-1 {
+    background-color: dodgerblue;
+    height: 200px;
+    flex-basis: 10em;
+  }
+
+  #box-2 {
+    background-color: orangered;
+    height: 200px;
+    flex-basis: 20em;
+  }
+</style>
+
+<div id="box-container">
+  <div id="box-1"></div>
+  <div id="box-2"></div>
+</div>
+
+========================================================================================
+
+15 - Use the flex Shorthand Property
+
+* É possível passar o flex-grow, flex-shrink e flex-basis através de uma propriedade: flex.
+* A propriedade flex recebe 3 valores que são: flex-grow, flex-shrink e flex-basis.
+
+<style>
+  #box-container {
+    display: flex;
+    height: 500px;
+  }
+  #box-1 {
+    background-color: dodgerblue;
+    flex: 2 2 150px;
+    height: 200px;
+  }
+
+  #box-2 {
+    background-color: orangered;
+    flex: 1 1 150px;
+    height: 200px;
+  }
+</style>
+
+<div id="box-container">
+  <div id="box-1"></div>
+  <div id="box-2"></div>
+</div>
+
+========================================================================================
+
+16 - Use the order Property to Rearrange Items
+
+* É possível alterar a ordem de como os elementos foram inseridos no HTML.
+* Para isso usa-se a propriedade order passando o número da ordem que será apresentado na tela.
+
+#azul-back {
+    background-color: blue;
+    display: flex;
+    order: 2
+}
+
+#red-back {
+    background-color: red;
+    display: flex;
+    order: 2
+}
+
+========================================================================================
+
+17 - Use the align-self Property
+
+* É possível alinhar um item individualmente usando a propriedade align-self.
+* Ela sobrescreve todas as outras propriedades de alinhamento.
+* Ela possui os mesmos valores da propriedade align-items: flex-start, flex-end, center, stretch e baseline.
+
+<style>
+  #box-container {
+    display: flex;
+    height: 500px;
+  }
+  #box-1 {
+    background-color: dodgerblue;
+    align-self: center;
+    height: 200px;
+    width: 200px;
+  }
+
+  #box-2 {
+    background-color: orangered;
+    align-self: flex-end;
+    height: 200px;
+    width: 200px;
+  }
+</style>
+
+<div id="box-container">
+  <div id="box-1"></div>
+  <div id="box-2"></div>
+</div>

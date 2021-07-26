@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão</title>
+
+    <style>
+        header {
+            background-color: #e5e5e5;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            float: left;
+            width: 20%;
+            text-align: center;
+            margin-right: 15px;
+        }
+
+        nav ul {
+            padding-inline-start: 0;
+        }
+
+        nav a {
+            background-color: #e5e5e5;
+            padding: 8px;
+            margin-top: 7px;
+            display: block;
+            width: 100%;
+            color: black;
+        }
+
+        aside {
+            background-color: #e5e5e5;
+            float: left;
+            width: 19%;
+            padding: 15px;
+            margin-top: 7px;
+            text-align: center;
+        }
+
+        aside form {
+            text-align: left;
+        }
+
+        legend {
+            margin-bottom: 10px;
+        }
+
+        input {
+            margin-bottom: 10px;
+            height: 25px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            height: 30px;
+        }
+
+        input, textarea {
+            width: 97%;
+            border: 2px solid;
+            border-radius: 3px;
+        }
+
+        main {
+            float: left;
+            width: 55%;
+            padding: 0 20px;
+        }
+
+        article p {
+            text-align: justify;
+        }
+
+        footer {
+            float: left;
+            text-align: center;
+            background-color: #e5e5e5;
+            margin-top: 7px;
+            padding: 10px;
+            width: 100%;
+        }
+
+        img {
+            width: 50%;
+            margin: auto;
+            display: block;
+        }
+
+        figcaption {
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Acessibilidade e Responsividade</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <a href="">Link 1</a>
+            <a href="">Link 1</a>
+            <a href="">Link 1</a>
+            <a href="">Link 1</a>
+        </ul>
+    </nav>
+
+    <main>
+        <article>
+            <h2>Os bichos lá de casa</h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+
+            <section>
+                <h2>Menino Romário</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+
+                <figure>
+                    <img src="https://picsum.photos/id/237/200/300" alt="Menino Romário quieto">
+                    <figcaption>Menino Romário tranquilo depois de encher o bucho</figcaption>
+                </figure>
+            </section>
+
+            <section>
+                <h2>Bob esponja</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+
+                <figure>
+                    <img src="https://i.picsum.photos/id/1025/4951/3301.jpg?hmac=_aGh5AtoOChip_iaMo8ZvvytfEojcgqbCH7dzaz-H8Y" alt="Bob com frio" width="50%">
+                    <figcaption>Sim, ele tem frio as vezes...</figcaption>
+                </figure>
+
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            </section>
+        </article>
+    </main>
+
+    <aside>
+        <h2>Sugetões?</h2>
+        <p>Nos envie sugetões para novos posts:</p>
+
+        <form action="">
+            <fieldset>
+                <legend>Qual a idéia?</legend>
+                <label for="name">Nome</label><br>
+                <input type="text" name="name" id="name" placeholder="Seu nome"><br>
+
+                <label for="email">E-mail</label><br>
+                <input type="mail" name="email" id="email" placeholder="Seu e-mail"><br>
+
+                <label for="birthdate">Data de nascimento</label>
+                <input type="date" name="birthdate" id="birthdate">
+
+                <label for="suggestion">Habla comigo:</label>
+                <textarea name="suggestion" id="suggestion" cols="27" rows="10"></textarea>
+
+                <input type="submit" value="Enviar">
+            </fieldset>
+        </form>
+    </aside>
+
+    <footer>
+        <p>© copyright algomish.com</p>
+    </footer>
+</body>
+</html>

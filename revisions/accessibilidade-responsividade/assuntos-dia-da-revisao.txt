@@ -1,0 +1,42 @@
+atributo alt em imagens - ok
+É recomendado usar apenas um elemento h1 em toda a página - ok
+tags semânticas:
+    article - ok
+    header - ok
+    nav - ok
+    footer - ok
+    audio
+    video
+    figure - ok
+    figcaption - ok
+    label/for - ok
+    fieldset/legend - ok
+    main - ok
+    section - ok
+atributo date em inputs - ok
+tag time e atributo datetime
+Conceito de contraste de cores
+Dar um significado a tudo que fizer no front-end: links, arquivos, nomes de id e class, etc.
+Atalho de teclado com accesskey e tabindex
+
+
+
+===>>> https://www.w3schools.com/html/html_responsive.asp
+media queries
+max-width
+min-width
+max-height
+min-height
+imagens responsivas
+elementos responsivos
+Conceito de vw, vh, vmin, vmax
+picture: diferente imagens para diferentes tamanhos
+
+<picture>
+  <source srcset="img_smallflower.jpg" media="(max-width: 600px)">
+  <source srcset="img_flowers.jpg" media="(max-width: 1500px)">
+  <source srcset="flowers.jpg">
+  <img src="img_smallflower.jpg" alt="Flowers">
+</picture>
+
+

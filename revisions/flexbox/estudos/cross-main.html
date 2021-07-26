@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        section {
+            display: flex;
+            flex-direction: row;
+            height: 200px;
+            background-color: grey;
+        }
+
+        section figure {
+            display: flex;
+            width: 20%;
+        }
+
+        section header {
+            display: flex;
+            width: 55%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section div {
+            display: flex;
+            width: 35%;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <figure>
+            <img src="logo.png" alt="Logo">
+        </figure>
+
+        <header>
+            <h1>Meu site com Flexbox</h1>
+            <p>Seu site para aprender Flexbox</p>
+        </header>
+
+        <div>
+            <form>
+                <label for="search">
+                    <input type="text" name="search" id="search">
+                </label>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
