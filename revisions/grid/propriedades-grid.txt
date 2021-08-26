@@ -1,0 +1,107 @@
+display: flex
+flex-direction: row | column
+flex-wrap: wrap
+flex-flow: column nowrap;
+justify-content: center
+align-items: center
+align-content: space-around
+
+order
+flex-grow
+flex-basis
+
+Need understand:
+
+flex-shrink
+align-self
+
+==============================
+
+Grid containers:
+
+display: grid
+grid-template-columns: 50px 50px; // n de colunas
+grid-template-rows: 50px 50px; // Podemos passar unidades de medidas tais como: auto, px, %, fr
+grid-column-gap: 10px;
+grid-row-gap: 5px;
+grid-gap: 10px 20px; // All / Row, column
+justify-items: center | stretch | start | end; // alinha um elemento horizontalmente
+align-items: center | stretch | start | end; // alinha um elemento verticalmente
+
+grid-template-areas: 
+    "header header header"
+    "advert content content"
+    "footer footer footer";
+
+grid-area: footer;
+grid-area: horizontal start / vertical start / horizontal end / vertical end; Ex: grid-area: 3 / 1 / 4 / 4;
+
+função repeat(total de repetições, tamanho). Ex: grid-template-columns: repeat(3, 1fr); É o mesmo que: grid-template-columns: 1fr 1fr 1fr;
+Outro exemplo de repeat: grid-template-columns: repeat(2, 50px 1fr) 20px. É o mesmo que grid-template-columns: 50px 1fr 50px 1fr 20px.
+grid-template-columns: 100px minmax(50px, 200px); Ex: grid-template-columns: repeat(3, minmax(50px, 200px));
+
+Grid items:
+
+grid-column: 2 / 4;
+grid-row: 2 / 4;
+justify-self: center | stretch | start | end; // alinha um elemento horizontalmente
+align-self: center | stretch | start | end; // alinha um elemento verticalmente
+
+-----------
+
+display
+grid-template-columns
+grid-template-rows
+grid-template-areas
+grip-column-gap
+grid-row-gap
+grid-gap
+justify-items
+align-items
+
+grid-column
+grid-row
+justify-self
+align-self
+grid-area
+
+---------
+
+Propriedades para o container:
+
+display
+
+grid-template-columns
+grid-template-rows
+grid-template-areas
+grid-template
+
+grip-column-gap
+grid-row-gap
+grid-gap
+
+justify-items
+align-items
+place-items
+justify-content
+align-content
+place-content
+
+grid-auto-columns
+grid-auto-rows
+grid-auto-flow
+grid
+
+Propriedades para o item:
+
+grid-column-start
+grid-column-end
+grid-row-start
+grid-row-end
+grid-column
+grid-row
+grid-area
+justify-self
+align-self
+place-self
+

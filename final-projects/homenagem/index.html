@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Homenagem</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+        }
+
+        #main {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 
+                "header header"
+                "image resumo"
+                "content content"
+                "footer footer";
+        }
+
+        #tribute-info {
+            display: grid;
+            grid-area: content;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas:
+                "historia cronologia fontes";
+        }
+
+        header {
+            height: 140px;
+            background-color: black;
+            grid-area: header;
+        }
+
+        header h1, header p {
+            color: #fff;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-top: 26px;
+            font-size: 30pt;
+        }
+
+        header p {
+            margin-top: 10px;
+            text-transform: uppercase;
+        }
+
+        #img-div {
+            grid-area: image;
+        }
+
+        #image {
+            max-width: 80%;
+            margin: 10px auto;
+            display: block;
+            padding: 30px;
+            background-color: black;
+        }
+
+        legend {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        section {
+            grid-area: resumo;
+            width: 89%;
+            margin-top: 0;
+            padding: 20px;
+            background-color: beige;
+            height: 83.4%;
+        }
+
+        section p {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        article {
+            text-align: justify;
+            background-color: #f2f2f2;
+            padding: 25px;
+            border-right: solid 1px;
+        }
+
+        article h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        article h3 {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: black;
+            height: 50px;
+            text-align: center;
+            color: #fff;
+            padding-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <header id="title">
+            <h1>Rocky Balboa</h1>
+            <p>O garanhão italiano</p>
+        </header>
+
+        <div id="img-div">
+            <img src="https://archive.triblive.com/wp-content/uploads/2018/11/CreedIIPhiladelphia94968jpgd7b94.jpg" alt="Foto do Balboa" id="image">
+            <legend id="img-caption">Rocky Balboa na escadaria da Filadelfia</legend>
+        </div>
+
+        <section>
+            <h2>Breve Resumo</h2>
+
+            <p>Rocky Balboa, Sr. (Filadélfia, 6 de Julho de 1946) é um personagem fictício, que segue carreira profissional como boxeador. Seu personagem foi vivido e criado pelo ator Sylvester Stallone.</p>
+
+            <h2>Estilo de Luta</h2>
+
+            <p>Nos dois primeiros filmes da série, o estilo de Rocky é focado na sua resistência sobre humana e com isso cansar o oponente, para depois atacar com poderosos golpes no corpo, como seu tecnico Mickey mesmo diz: "Ele ataca o corpo como ninguém, temos uma chance". Rocky não é um lutador muito habilidoso mas, sua resistência e força impressionante compensam essa deficiência.</p>
+
+            <p>Após ser derrotado por Clubber Lang no terceiro fime da série, seu antigo rival, Apollo Creed, decide treiná-lo e ensina-o seu estilo dançante característico. Rocky domina o 1º round da luta sem dificuldades mas percebe que seus socos pouco estão afetando seu adversário e então decide cansá-lo, deixando-se acertar, esta estratégia não agrada nem um pouco a Creed que irrita-se e manda-o voltar ao estilo de esquiva. Rocky porém, volta a receber socos e quando já esta machucado e seu adversário encontra-se exausto, Balboa passa a esquivar-se rapidamente e com uma incrível sequência de socos nocauteia Lang e retoma seu título de campeão mundial.</p>
+
+            <p>No 4º título da série, Balboa mantem um pouco do estilo dançante de Creed e isto ajuda-o a vencer o Russo Ivan Drago.</p>
+        </section>
+
+        <main id="tribute-info">
+            <article id="history">
+                <h2>História</h2>
+
+                <p>O Rocky Balboa era um humilde lutador de bairro, que vivia de suas discretas lutas, no início de sua carreira segundo seu treinador Mickey, Rocky era um jovem promissor mas nunca se interessou realmente em evoluir, preferiu trabalhar para um agiota italiano chamado Tony Gazzo, com quem manteve uma certa amizade, Gazzo gostava de Rocky por ele ser descendente de italiano, ajudou Rocky dando US$ 500,00 para o seu treinamento, na primeira luta que fez com Apollo Creed. Rocky só se preocupa com a carreira após receber o convite para lutar pelo "Título Mundial de Pesos Pesados" contra o atual e invicto campeão Apollo Creed. Rocky foi casado com Adrian Pennino Balboa, vivida pela atriz Talia Shire. Tem como cunhado seu melhor amigo, o problemático Paulie Pennino interpretado pelo ator Burt Young. O fruto de seu único casamento gerou um filho, Robert "Rocky" Balboa, Jr.</p>
+            </article>
+
+            <article id="cronology">
+                <h2>Cronologia</h2>
+
+                <p>Assim que ganha o título de Apollo Creed, após uma revanche que ocorreu em novembro de 1976, Rocky defende o título 10 vezes, sagrando-se vitorioso em todas elas. Repentinamente, surge a idéia de se aposentar. Seu treinador, Mickey Goldmill, já não está tão bem de saúde, é quando Clubber Lang, um terrível adversário, o desafia para uma luta valendo o título. Rocky não pensa duas vezes e aceita a proposta. Mickey acaba o treinando, mas justamente na noite da luta, em uma discussão entre Lang e Balboa, Mickey acaba sendo empurrado pelo rival de Rocky, tendo assim um infarto, morrendo logo após o término da luta ao lado de Rocky. Rocky acaba perdendo a luta e o título, e sabendo disso, Apollo Creed, seu antigo rival, começa a treiná-lo, e o ajuda a retomar o título de campeão. A tática de esquiva foi aprovada por Rocky, e chegou muitas vezes a confundir o adversário, que foi levado com diretos jabs e socos fortíssimos no estômago, sendo que foi nocauteado no 3º Round da luta.</p>
+            </article>
+
+            <article id="fonts">
+                <h2>Fontes externas</h2>
+
+                <p>Para ver mais informações sobre Rocky Balboa, por favor 
+                    <a href="https://pt.wikipedia.org/wiki/Rocky_Balboa" target="_blank" id="tribute-link">acesse esse link</a>.
+                </p>
+
+                <h3>Rocky Steps</h3>
+
+                <p>The 72 stone steps leading up to the entrance of the Philadelphia Museum of Art, in Philadelphia, Pennsylvania, have become known as the "Rocky Steps" as a result of a scene from the film Rocky. Tourists often mimic Rocky's famous climb, a metaphor for an underdog or an everyman rising to a challenge.[1] A bronze Rocky statue was briefly situated at the top of the steps for the filming of Rocky III. This statue, now located at the bottom right of the steps, is a popular photo opportunity for visitors and widely considered one of, if not the most photographed statue in the world. The top of the steps offers a commanding view of Eakins Oval, the Benjamin Franklin Parkway, and Philadelphia City Hall.</p>
+            </article>
+        </main>
+
+        <footer>
+            <p>Desenvolvido por Luquinhas. Love you!</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 214px);
+        }
+
+        .item2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>1</div>
+        <div class="item2">
+            <div>2.1</div>
+            <div>2.2</div>
+            <div>2.3</div>
+            <div>2.4</div>
+            <div>2.5</div>
+        </div>
+        <div>3</div>
+    </div>
+</body>
+</html>

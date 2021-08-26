@@ -1,12 +1,12 @@
-# Apresentações do dia 23-07-2021
+# Apresentações do dia 30-07-2021
 
-As apresentações do dia 23-07-2021 foram feitas por Heloisa e Erica para demonstrar os conhecimentos relacionados com o que estão estudando sobre *Flexbox*.
+As apresentações do dia 30-07-2021 foram feitas por Heloisa e Erica para demonstrar os conhecimentos relacionados com o que estão estudando sobre *Flexbox*. Sim, mais um projeto para exercitar bastante esses conceitos tão importantes para um front-end.
 
 Flexbox é uma técnica bastante utilizada no mercado para criar interfaces e estruturar de forma mais simples os elementos na tela. Utilizando conceitos de container e items é possível facilitar inclusive a responsividade de implementado Flexbox da forma correta.
 
 Neste projeto Erica e Heloisa desenvolveram a seguinte tela utilizando conceitos de Flexbox:
 
-![WhatsApp Project](./image/whatsapp-project.png)
+![WhatsApp Project](./image/instagram-project.png)
 
 Basicamente através de conteúdos gratuítos elas conseguiram aprender bastante coisas importantes sobre Flexbox e o resultado é o projeto que pode ser visto abaixo:
 
@@ -14,14 +14,13 @@ Basicamente através de conteúdos gratuítos elas conseguiram aprender bastante
 
 Abaixo pode ser encontrado o projeto de todos os alunos de forma comprimida. Caso queira visualizar o resultado é preciso baixar o arquivo e abrir na sua máquina:
 
-| Aluno    | Projeto                   | Curso   |
-| -------- | ------------------------- | ------- |
-| Heloisa  | [WhatsApp Meets][heloisa] | Flexbox |
-| Erica    | [WhatsApp Meets][erica]   | Flexbox |
+| Aluno    | Projeto                      | Curso   |
+| -------- | ---------------------------- | ------- |
+| Heloisa  | [Instagram Profile][heloisa] | Flexbox |
+| Erica    | [Instagram Profile][erica]   | Flexbox |
 
 ## Conteúdos estudados
 
-* [\[TUTORIAL\] ALGOMISH YOUTUBE - Como Fazer uma Caixa de Mensagem com FLEXBOX](https://youtu.be/VnvX5qv3zU8)
 * [\[Flexbox\] FreeCodeCamp - Responsive Web Design - CSS Flexbox](https://www.freecodecamp.org/learn/responsive-web-design/#css-flexbox)
 * [\[Flexbox\] CSS Tricks - A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
