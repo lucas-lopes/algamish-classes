@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            color: #000;
+        }
+
+        #welcome-section {
+            display: grid;
+            grid-template-columns: repeat(4, 25%);
+            grid-template-rows: 1fr 1fr 1fr;
+            height: 91.5vh;
+            padding-top: 60px;
+        }
+
+        #welcome-section p, #welcome-section h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            color: #fff;
+            font-size: 55pt;
+        }
+
+        #welcome-section h1 {
+            background-color: #d44875;
+            grid-area: 1 / 1 / 2 / 5;
+        }
+
+        #welcome-section p:nth-child(2) {
+            background-color: #e68b2d;
+        }
+
+        #welcome-section p:nth-child(3), #projects > section > article:nth-child(1) div {
+            background-color: #4343dc;
+        }
+
+        #welcome-section p:nth-child(4), #projects > section > article:nth-child(2) div {
+            background-color: #b143dc;
+        }
+
+        #welcome-section p:nth-child(5) {
+            background-color: #43acdc;
+        }
+
+        #welcome-section p:nth-child(6) {
+            background-color: #43dca1;
+        }
+
+        #welcome-section p:nth-child(7), #projects > section > article:nth-child(3) div {
+            background-color: #e62d50;
+        }
+
+        #welcome-section p:nth-child(8) {
+            background-color: #cebe2a;
+        }
+
+        #welcome-section p:nth-child(9), #projects > section > article:nth-child(4) div {
+            background-color: #dc5a43;
+        }
+
+        nav {
+            position: fixed;
+            height: 60px;
+            background-color: #f9f7f7;
+            width: 100%;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-evenly;
+            height: 100%;
+            align-items: center;
+        }
+
+        nav li {
+            list-style: none;
+            font-size: 14pt;
+            text-transform: uppercase;
+            font-weight: bold;
+            cursor: pointer;
+            color: #000;
+        }
+
+        a:hover {
+            color: #4343dc;
+        }
+
+        #quem-somos, #projects {
+            text-align: justify;
+            padding: 20px 100px;
+        }
+
+        #quem-somos {
+            background-color: #f9f9f9;
+        }
+
+        #quem-somos * {
+            margin: 10px 0;
+        }
+
+        #quem-somos ul {
+            padding-left: 50px;
+        }
+
+        p, li {
+            font-size: 14pt;
+        }
+
+        .emphasis-letter {
+            color: red;
+        }
+
+        #projects {
+            background-color: #e8d394;
+        }
+
+        #projects > section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-items: center;
+            grid-row-gap: 40px
+        }
+
+        #projects * {
+            padding: 10px 0;
+        }
+
+        #projects > section article {
+            width: 500px;
+            border: 1px solid;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            box-shadow: 1px 1px 5px;
+            padding: 10px 10px;
+        }
+
+        .project-tile div {
+            display: flex;
+            height: 100px;
+            align-items: center;
+            justify-content: space-around;
+            background-color: #d0d0d0;
+        }
+
+        .project-tile div > p {
+            font-size: 55pt;
+            color: #fff;
+        }
+
+        .project-tile a {
+            background-color: orange;
+            padding: 15px;
+            color: #fff;
+            font-weight: bold;
+            font-size: 14pt;
+            border-radius: 5px;
+            box-shadow: 1px 1px 5px #000;
+            display: block;
+            width: 100px;
+            text-align: center;
+            float: right;
+        }
+
+        @media (max-width: 360px) {
+            header {
+                background-color: crimson;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <ul>
+            <li>
+                <a href="#quem-somos">Quem Somos</a>
+            </li>
+            <li>
+                <a href="#projects">Projetos</a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/channel/UCv4GHypI6tHDUkMbtt1_rXA/" target="_blank">YouTube</a>
+            </li>
+            <li>
+                <a href="https://github.com/lucas-lopes" target="_blank" id="profile-link">GitHub</a>
+            </li>
+            <li>
+                <a href="#contact">Contato</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section id="welcome-section">
+        <h1>BLOG</h1>
+        <p>A</p>
+        <p>L</p>
+        <p>G</p>
+        <p>O</p>
+        <p>M</p>
+        <p>I</p>
+        <p>S</p>
+        <p>H</p>
+    </section>
+
+    <section id="quem-somos">
+        <h2>Quem Somos</h2>
+
+        <article>
+            <p>Voltado ao profundo desejo de empreendedorismo que por muitos anos crescia na mente e no coração do fundador do <b>Grupo Algomish</b>, <b><a href="">Lucas Barbosa</a></b>, foi criado no ano de 2019 de forma amadora e sem nenhuma formalização a empresa Algamish.</p>
+
+            <p>Talvez você não tenha percebido a sutil diferença, mas o primeiro nome da empresa foi <b>Algamish</b> com "a" após a letra "g". Este nome foi retirado de um livro que foi lido por Lucas no ano de 2018. O nome do livro é "O homem mais rico da Babilônia", onde neste livro existe o personagem favorito dele, o Algamish! Este personagem é um sábio e agiota que ensina Arkad, o personagem principal do livro a se tornar o homem mais rico da Babilônia.</p>
+        </article>
+
+        <article>
+            <h3>A mudança de nome, mudança de significado</h3>
+
+            <p>Com muita tristeza foi necessário realizar a mudança do nome Alg<b class="emphasis-letter">a</b>mish para Alg<b class="emphasis-letter">o</b>mish. O motivo foi que ao iniciar a estruturação da empresa, especificamente no momento da criação do domínio e registro da marca foi encontrado uma empresa que vendia impressoras nos EUA usando a marca Algamish.</p>
+
+            <p>A ideia inicial para o nome foi o significado do personagem no livro, um homem de sucesso, que conhece o caminho que a maioria quer trilhar, ensina um jovem que o faz se tornar imenso, que faz mudar a vida dele e com certeza de muitos ao seu redor. Isso tudo vai de encontro com a missão e valores da Algomish.</p>
+
+            <p>Assim, Barbosa pensou muito e encontrou um novo significado após alterar o "a" pelo "o" na palavra Algamish: ensinar, construir bases e ser eterno como um loop infinito. A letra "o" é o infinito, este círculo não se quebra, é a mudança que proporcionamos na vida das pessoas que estão conosco e é isso que significa o Grupo Algomish.</p>
+        </article>
+
+        <article>
+            <h3>O que fazemos?</h3>
+
+            <p>Sabemos que a educação muda vidas e a Tecnologia revoluciona realidades! Estes dois componentes nos fez chegar até aqui e são eles que vão nos levar para muito longe. Portanto, hoje o Grupo Algomish possui 4 projetos sendo que 2 deles são voltados para educação e os demais voltados para Tecnologia:</p>
+
+            <ul>
+                <li>Algomish Classes</li>
+                <li>English 22</li>
+                <li>Algomish Delivery</li>
+                <li>Algomish Consult</li>
+            </ul>
+
+            <p>Conheça nossos projetos com todos os detalhes na seção <a href="#projects">Projetos</a>.</p>
+        </article>
+    </section>
+
+    <main id="projects">
+        <h2>Projetos</h2>
+
+        <article>
+            <p>Voltado ao profundo desejo de empreendedorismo que por muitos anos crescia na mente e no coração do fundador do <b>Grupo Algomish</b>, <b><a href="">Lucas Barbosa</a></b>, foi criado no ano de 2019 de forma amadora e sem nenhuma formalização a empresa Algamish.</p>
+
+            <p>Talvez você não tenha percebido a sutil diferença, mas o primeiro nome da empresa foi <b>Algamish</b> com "a" após a letra "g". Este nome foi retirado de um livro que foi lido por Lucas no ano de 2018. O nome do livro é "O homem mais rico da Babilônia", onde neste livro existe o personagem favorito dele, o Algamish! Este personagem é um sábio e agiota que ensina Arkad, o personagem principal do livro a se tornar o homem mais rico da Babilônia.</p>
+        </article>
+
+        <section>
+            <article class="project-tile">
+                <h2>Algomish Classes</h2>
+    
+                <div>
+                    <p>A</p>
+                    <p>C</p>
+                </div>
+    
+                <p>Sabemos que a educação muda vidas e a Tecnologia revoluciona realidades! Estes dois componentes nos fez chegar até aqui e são eles que vão nos levar para muito longe. Portanto, hoje o Grupo Algomish possui 4 projetos sendo que 2 deles são voltados para educação e os demais voltados para Tecnologia</p>
+    
+                <a href="">Detalhes</a>
+            </article>
+    
+            <article class="project-tile">
+                <h2>English 22</h2>
+    
+                <div>
+                    <p>E</p>
+                    <p>22</p>
+                </div>
+    
+                <p>Sabemos que a educação muda vidas e a Tecnologia revoluciona realidades! Estes dois componentes nos fez chegar até aqui e são eles que vão nos levar para muito longe. Portanto, hoje o Grupo Algomish possui 4 projetos sendo que 2 deles são voltados para educação e os demais voltados para Tecnologia</p>
+    
+                <a href="">Detalhes</a>
+            </article>
+
+            <article class="project-tile">
+                <h2>Algomish Delivery</h2>
+    
+                <div>
+                    <p>A</p>
+                    <p>D</p>
+                </div>
+    
+                <p>Sabemos que a educação muda vidas e a Tecnologia revoluciona realidades! Estes dois componentes nos fez chegar até aqui e são eles que vão nos levar para muito longe. Portanto, hoje o Grupo Algomish possui 4 projetos sendo que 2 deles são voltados para educação e os demais voltados para Tecnologia</p>
+    
+                <a href="">Detalhes</a>
+            </article>
+
+            <article class="project-tile">
+                <h2>Algomish Consult</h2>
+    
+                <div>
+                    <p>A</p>
+                    <p>C</p>
+                </div>
+    
+                <p>Sabemos que a educação muda vidas e a Tecnologia revoluciona realidades! Estes dois componentes nos fez chegar até aqui e são eles que vão nos levar para muito longe. Portanto, hoje o Grupo Algomish possui 4 projetos sendo que 2 deles são voltados para educação e os demais voltados para Tecnologia</p>
+    
+                <a href="">Detalhes</a>
+            </article>
+        </section>
+    </main>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

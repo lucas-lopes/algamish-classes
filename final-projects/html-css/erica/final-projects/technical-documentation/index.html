@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Página de descrição</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+	margin: 0;
+}
+
+#main-doc {
+	display: grid;
+	grid-template-columns: 30% 1fr;
+	background: #ececec;
+	grid-gap: 10px;
+}
+
+#secao {
+	color: #8b0a50;
+	margin: 10px;
+	text-align: center;
+}
+
+.navbarares {
+	border-top: 1px solid #b3b3b3;
+																																																																																																			list-style: none;
+	position: relative;
+	width: 100%;
+	display: grid;
+	height: 48px;
+	justify-items: center;
+	align-items: center;
+}
+
+#navegar {
+	padding: 0;
+	display: grid;
+}
+
+.none {
+	list-style: none;
+}
+
+#navbar {
+	background: black;
+}
+
+.nav-link {
+	text-decoration: none;
+	color: #4d4e53;
+}
+
+#conhecimento {
+	border-bottom: 1px solid #b3b3b3;;
+}
+
+article > section > header > h2 {
+	text-transform: uppercase;
+	color: #8b0a50;
+	font-weight: 600;
+	font-size: 25px;
+	margin: 20px;
+	text-align: center;
+}
+
+p, code {
+	text-align: justify;
+	margin: 0 20px 20px 20px;
+}
+
+.main-section {
+	font-family: serif;
+	background-color: white;
+	box-shadow: 2px 2px 3px 2px #9e9999;
+}
+
+article {
+	display: grid;
+	grid-template-rows: repeat(5, 1fr);
+	grid-gap: 10px;
+}
+
+a:hover {
+	color: #de529e;
+}
+
+code {
+	color: #f50588;
+}
+
+@media (max-width: 360px) {
+	#main-doc {
+	grid-template-columns: none;
+}
+}
+</style>
+</head>
+
+<body>
+<main id="main-doc">
+
+	<nav id="navbar">
+		<header id="secao"><h2>SEÇÃO RÁPIDA</h2></header>
+		<ul id="navegar">
+			<li  class="navbarares"><a class="nav-link" href="#HTML_básico">HTML básico</a></li>
+			<li class="navbarares"><a class="nav-link"  href="#Criando_uma_página">Criando uma página</a></li>
+			<li class="navbarares"><a class="nav-link"  href="#Como_colocar_uma_imagem">Como colocar uma imagem</a></li>
+			<li class="navbarares"><a class="nav-link"  href="#Minha_prieira_Home_Page">Minha prieira Home Page</a></li>
+			<li class="navbarares" id="conhecimento"><a class="nav-link"  href="#Qual_Editor_usar">Qual Editor usar</a></li>
+		</ul>
+	</nav>
+
+<article>
+	<section class="main-section" id="HTML_básico">
+		<header><h2>HTML BÁSICO</h2></header>
+		<p>
+		 	Html A linguagem Html ( Hypertext Markup Language - Linguagem de Marcação de Hipertexto) é usada para criar as páginas divulgadas na 				World 
+		 	Wide Web(www), o serviço mais popular na Internet. É com ela que são feitos os hyperlinks que permitem navegar pela Web. Para isso, 			utiliza marcações, chamadas tags, no ponto da página em que é feito um hyperlink com outra página.
+		</p>
+		<ul class="none">
+			<li><code>#main-doc {display: grid;grid-template-columns: 30% 1fr;background: #ececec;grid-gap: 10px;}</code></li>
+			<li><code>@media (max-width: 360px) {}</code></li>
+			<li><code>p, code {text-align: justify;margin: 0 20px 20px 20px;}</code></li>
+			<li><code>.nav-link {text-decoration: none;color: #4d4e53;}
+			</code></li>
+			<li><code>#navbar {background: black;}</code></li>
+		</ul>
+		<p>
+			Para criar uma página Html, usaremos o Bloco de Notas, um editor de texto simples que acompanha o Windows. Isto é tudo que você precisa. 				Antes de tudo você deve criar uma pasta abrindo o Windows Explorer, clicando em Arquivo/ Novo/ Pasta. Dê um nome sugestivo a esta pasta 			e coloque nesta pasta todas as figuras gif e jpg que gostaria que sua página tivesse. Você pode criar suas páginas em um disquete
+		</p>
+	</section>
+
+	<section class="main-section" id="Criando_uma_página">
+		<header><h2>Criando uma página</h2></header>
+		<p>
+		 	Criando sua primeira página Html 1º Abra o Bloco de Notas. Clique em Editar e marque o item Mudança Automática de linha. 2º Digite o 				seguinte texto: Toda página Html deve iniciar com essa tag. 3º Digite : O cabeçalho deve ser delimitado pelas tags e 4º Digite: Onde 				deve ficar o título da página. Feche com. Exemplo: teste html 5º Digite: para fechar o cabeçalho da página
+		</p>
+		<p>
+			Digite: Onde deve ficar o corpo da sua página. Depois deve inserir o título para o texto. Para isso você usará as tags e Exemplo Minha 				primeira Home Page O tamanho vai de tamanho maior para tamanho menor. 7º Para colocar um texto digite : Texto aqui Feche com Exemplo: 			Páginas Html podem ser criadas em qualquer editor ou processador de texto
+		</p>
+		<ul class="none">
+			<li><code>#main-doc {display: grid;grid-template-columns: 30% 1fr;background: #ececec;grid-gap: 10px;}</code></li>
+			<li><code>@media (max-width: 360px) {}</code></li>
+			<li><code>p, code {text-align: justify;margin: 0 20px 20px 20px;}</code></li>
+			<li><code>.nav-link {text-decoration: none;color: #4d4e53;}
+			</code></li>
+			<li><code>#navbar {background: black;}</code></li>
+		</ul>
+	</section>
+
+	<section class="main-section" id="Como_colocar_uma_imagem">
+		<header><h2>Como colocar uma imagem</h2></header>
+		<p>
+		 	Colocando uma imagem : Exemplo: A imagem deve estar na mesma pasta que o arquivo Html. Ou aponte para a pasta certa. Img src é referente 				a imagem que precisar ser indicado sua extensão Gif ou Jpg. Alt é um texto alternativo enquanto a página é carregada ou quando se passa 			com o mouse sobre a figura. Height e Width são as dimensões da figura em pixels, modifique a seu gosto. Se você não indicar as dimensões 				da figura excluindo height e width sua imagem terá o tamanho original. 9º Vamos fechar o corpo do texto e terminar com a tag de 		
+      fechamento. Exemplo:
+		</p>
+		<p>
+		 	Salve com extensão.html ou.htm. Exemplo: teste.html ou teste.htm Abrindo e vendo o resultado. Abra seu navegador padrão ( Internet 			
+     	Explorer ou Netscape). Clique em Arquivo /Abrir ou Abrir página/ Procurar. Abra a pasta onde você salvou sua página clique no arquivo 
+      html de sua página e de Ok. Lembrando que para atualizar sua página basta apenas abri- la no navegador padrão e clicar em Exibir/ Código 
+     	de	 Fonte e fazer as modificações necessárias no código do documento Html não esquecendo de salva- lo. teste.html
+		</p>
+	</section>
+
+	<section class="main-section" id="Minha_prieira_Home_Page">
+		<header><h2>Minha prieira Home Page</h2></header>
+		<p>
+		 	Exemplo completo teste html Minha primeira Home Page Páginas Html podem ser criadas em qualquer editor ou processador de texto Tanto as 			figura como o texto ou mesmo os hyperlinks podem ser alinhados no canto esquerdo, direito ou centralizados. Como fazer. texto alinhado 				ao centro texto alinhado a direita Caso você não escolha nenhuma dessas duas tags o alinhamento será automático.
+		</p>
+		<p>
+		 	Passo 2 Agora que você fez sua primeira Home Page vamos tornar- lá mais atraente com as seguintes tags: Para Internet Explorer e. Dessa 			forma seu título vai ser um letreiro que vai passar de um lado para outro. Não esqueça de fechar com a tag e E junto a tag. Assim seu 			texto vai ter a cor vermelha. Vamos também centralizar a imagem. E Salvaremos como teste2.htm. Com a tag e fechar com a tag teste2.htm
+		</p>
+	</section>
+
+	<section class="main-section" id="Qual_Editor_usar">
+		<header><h2>Qual Editor usar</h2></header>
+		<p>
+	 		Exemplo: teste html Minha primeira Home Page Páginas Html podem ser criadas em qualquer editor ou processador de texto Você pode 					modificar também o fundo, colocando uma imagem ou uma cor. Exemplo para ou para imagem. A figura " fundo2.gif" é um exemplo enviado 			junto com a apostila. No seu caso será necessário colocar o nome da figura e a extensão( gif ou jpg). Não é aconselhável usar 			
+      imagens.bmp ( Bitmap ) por ser bem maior( em KB) que as imagens Gif e Jpg.
+		</p>
+		<p>
+		 	Hyperlinks Para inserir um hyperlink que aponte para uma outra Home Page, digite: Infoexame. Este exemplo abre a página da Revista 			
+      Infoexame. Para inserir um hyperlink que aponte para sua própria página como exemplo usamos Tabela. Para inserir uma figura que quando 				clicada abre uma outra página ou um link para enviar e- mail.
+		</p>
+			<ul class="none">
+				<li><code>#main-doc {display: grid;grid-template-columns: 30% 1fr;background: #ececec;grid-gap: 10px;}</code></li>
+				<li><code>@media (max-width: 360px) {}</code></li>
+				<li><code>p, code {text-align: justify;margin: 0 20px 20px 20px;}</code></li>
+				<li><code>.nav-link {text-decoration: none;color: #4d4e53;}
+				</code></li>
+				<li><code>#navbar {background: black;}</code></li>
+		</ul>
+	</section>
+</article>
+</main>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>

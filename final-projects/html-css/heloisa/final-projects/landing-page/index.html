@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Music Store</title>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="CSS, HTML">
+  <meta name="author" content="heloisa lopes">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> 
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+    }
+ 
+    body {
+      background-color: #fffedb;
+    }
+
+    #header {
+      display: flex;
+      justify-content: space-between;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      background-color: #f7ea66;
+      height: 70px;
+    }
+
+    #header-img {
+      width: 108px;
+      height: 70px;
+      margin-left: 14px;
+    }
+
+    #nav-bar {
+      display: flex;
+      margin-right: 10px;
+    }
+
+    ul {
+      display: flex;
+      list-style: none;
+      align-self: center;
+      margin-right: 44px;
+    }
+
+    li {
+      margin-left: 25px;
+      font-size: 15pt;
+    }
+
+    .nav-link {
+      color: black;
+    }
+
+    .nav-link:hover {
+      color: #fbd51d;
+    }
+
+    #pesquisar {
+      display: grid;
+      justify-content: center;
+      margin-top: 8%;
+    }
+
+    #pesquisar > h2 {
+      font-size: 23pt;
+      font-weight: 400;
+    }
+
+    #form > div, #pesquisar > div, .title, .violinos > h2, .select, #ofertas, .servicos, #violino, footer {
+      justify-content: center;
+      display: flex;
+    }
+
+    #email {
+      width: 275px;
+      height: 31px;
+      border-radius: 5px;
+      margin: 18px 0 8px;
+      padding-left: 5px;
+    }
+
+    #submit {
+      width: 160px;
+      height: 35px;
+      border-radius: 8px;
+      margin: 0px 0 16px;
+      background-color: #fbd51d;
+    }
+
+    .violinos {
+      background-color: #FFF;
+      width: 25%;
+      padding-bottom: 20px;
+      border: 1px solid black;
+      margin-right: 22px;
+    }
+
+    .title {
+      background-color: #fbfe67;
+      height: 47px;
+      align-items: center;
+    }
+
+    .title > h2 {
+      font-family: sans-serif;
+      color: #7b6911;;
+    }
+
+    .violinos > h2 {
+      font-size: 20pt;
+      margin: 17px 0;
+    }
+
+    ol {
+      list-style: none;
+      display: grid;
+      justify-content: center
+    }
+
+    ol > li {
+      justify-content: center;
+      display: grid;
+      margin-left: 0;
+      font-size: 13pt;
+      font-family: sans-serif;
+      margin-bottom: 13px;
+    }
+
+    .select {
+      margin-top: 7px;
+    }
+
+    button {
+      width: 58%;
+      height: 43px;
+      background-color: #fbd51d;
+      border-radius: 6px;
+    }
+
+    button:hover, #submit:hover {
+      background-color: #fbfe67;
+    }
+
+    #ofertas {
+      margin-top: 50px;
+    }
+
+    #last-div {
+      margin-right: 0;
+    } 
+
+    .servicos {
+      height: 85px;
+      align-items: center;
+      margin: 50px 0 10px;
+    }
+
+    .fa-fire, .fa-truck-moving, .fa-battery-full {
+      font-size: 40pt;
+      color: #fbd109;
+    }
+
+    section > .servicos > div {
+      margin-left: 18px;
+    }
+
+    section > .servicos > div > h2 {
+      font-size: 20pt;
+      font-family: sans-serif;
+    }
+
+    .video {
+      margin: 37px 0 10px;
+    }
+
+    footer {
+      background-color: #fbfe67;
+      height: 60px;
+      align-items: center;
+      margin-top: 35px;
+    }
+
+    footer > p {
+      font-size: 14pt;
+    }
+
+    @media (max-width: 900px) {
+      #pesquisar {
+        margin-top: 50px;
+      }
+
+      #ofertas {
+        margin-top: 70px;
+      }
+
+      #recursos {
+        margin-top: 80px;
+      }
+
+      .video {
+        margin: 74px 0 10px;
+      }
+
+      footer {
+        margin-top: 52px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header id="header">
+    <img src="https://thumbs.dreamstime.com/b/%C3%ADcone-do-violino-logotipo-da-etiqueta-loja-m%C3%BAsica-s%C3%ADmbolo-instrumento-musical-vetor-115770111.jpg" alt="Crowns Violinos" id="header-img">
+
+    <nav id="nav-bar">
+      <ul>
+        <li><a href="#precos" class="nav-link">Preços</a></li>
+        <li><a href="#recursos" class="nav-link">Recursos</a></li>
+        <li><a href="#violino" class="nav-link">Violino</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="pesquisar">
+    <h2>Obras primas, artesanais e caseiras</h2>
+
+    <form id="form" action="https://www.reecodecamp.com/email-enviar">
+      <div>
+        <input type="email" name="email" id="email" placeholder="Digite seu email aqui">
+      </div>
+
+    <div>
+      <input type="submit" name="submit" id="submit">
+    </div>
+  </section>
+  </form>
+
+  <section id="ofertas">
+    <div class="violinos" id="precos">
+      <div class="title"><h2>Violino Clássico</h2></div>
+      <h2>R$ 800,00</h2>
+
+      <ol>
+        <li>Violino clássico artesanal</li>
+        <li>3/4</li>
+        <li>Profissional luxo eagle ve431</li>
+      </ol>
+
+      <div class="select">
+        <button>Selecionar</button>
+      </div>
+    </div>
+
+    <div class="violinos">
+      <div class="title"><h2>Violino Barroco</h2></div>
+      <h2>R$ 2.500</h2>
+
+      <ol>
+        <li>Violino barroco artesanal</li>
+        <li>Luthier 2015</li>
+        <li>Feito à mão</li>
+      </ol>
+
+      <div class="select">
+        <button>Selecionar</button>
+      </div>
+    </div>
+
+    <div class="violinos" id="last-div">
+      <div class="title"><h2>Violino Elétrico</h2></div>
+      <h2>R$ 1.397,09</h2>
+
+      <ol>
+        <li>Violino elétrico em tamanho real</li>
+        <li>Madeira maçiça</li>
+        <li>Esculpido à mão</li>
+      </ol>
+
+      <div class="select">
+        <button>Selecionar</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="recursos">
+    <div class="servicos">
+      <i class="fas fa-fire"></i>
+      <div>
+        <h2>Materiais de qualidade</h2>
+        <p>Violinos feitos com os melhores materiais para aumentar a durabilidade e a qualidade dos nossos produtos.</p>
+      </div>
+    </div>
+
+    <div class="servicos">
+      <i class="fas fa-truck-moving"></i>
+      <div>
+        <h2>Entrega rápida</h2>
+        <p>Nossa entrega é rápida, sendo assim, não há a necessidade de muita espera. Pesquisou, comprou, chegou!</p>
+      </div>
+    </div>
+
+    <div class="servicos">
+      <i class="fas fa-battery-full"></i>
+      <div>
+        <h2>Garantimos nossa qualidade</h2>
+        <p>Trabalhamos para levar o melhor até você, por isso, temos uma equipe qualificada cuidando de cada detalhe.</p>
+      </div>
+    </div>
+  </section>
+
+  <div id="violino">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/g3SSEd2MO7g" title="YouTube video player" id="video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  
+  <footer>
+    <p>Copyright 2021, Music Store</p>
+  </footer>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

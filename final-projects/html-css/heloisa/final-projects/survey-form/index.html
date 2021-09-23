@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulário de Pesquisa</title>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="CSS, HTML">
+  <meta name"author" content="heloisa lopes">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #c8eff5;;
+      display: flex;
+      justify-content: center;
+    }
+
+    section {
+      width: 73%;
+      background-color: #18256d;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    #titulo {
+      height: 79px;
+      padding-top: 20px;
+      background-color: #3c4a9a;
+    }
+
+    #title, #description {
+      display: flex;
+      justify-content: center;
+      color: #FFF;
+    }
+
+    #title {
+      font-size: 26pt;
+      font-family: sans-serif;
+    }
+
+    #survey-form {
+      margin-bottom: 20px;
+    }
+
+    label, p {
+      color: #FFF;
+    }
+
+    section > #survey-form > div {
+      margin: 0px 55px 17px;
+    }
+
+    #survey-form > div > label > p, div > p {
+      font-size: 19pt;
+    }
+
+    #name, #email, #number, #prefer, #survey-form > div > label > select {
+      height: 40px;
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    select {
+      background-color: #FFF;
+    }
+
+    .radio, #prefer {
+      height: 17px;
+      width: 17px;
+    }
+
+    #comments {
+      width: 95%;
+      height: 112px
+    }
+
+    #submit {
+      width: 90%;
+      height: 51px;
+      background-color: #bfc7f5;
+      margin-left: 50px;
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <div id="titulo">
+      <h1 id="title">Formulário de pesquisa para melhoria</h1>
+      <p id="description">Obrigado por nos ajudar a melhorar a plataforma</p>
+    </div>
+
+    <form id="survey-form">
+      <div>
+        <label for="name" id="name-label">
+          <p>Nome:</p>
+          <input type="text" id="name" name="name" placeholder="Insira seu nome" required="Insira seu nome" />
+        </label>
+      </div>
+
+      <div>
+        <label for="email" id="email-label">
+          <p>Email:</p>
+          <input type="email" id="email" name="email" placeholder="Insira seu email" required="Insira seu email" />
+        </label>
+      </div>
+
+      <div>
+        <label for="number" id="number-label">
+          <p>Idade:</p>
+          <input type="number" min="1" max="90" id="number" name="number" placeholder="Insira sua idade" />
+        </label>
+      </div>
+
+      <div>
+        <label for="opcao">
+          <p>Qual das opções te descreve melhor atualmente?</p>
+          <select id="opcao" name="opcao">
+            <option>Estudante</option>
+            <option>Trabalho em tempo integral</option>
+            <option>Aprendiz em tempo integral</option>
+            <option>Prefiro não dizer</option>
+            <option>Outros</option>
+          </select>
+        </label>
+      </div>
+
+      <div>
+        <label for="select">
+          <p>Você recomendaria nossa platarforma a um amigo?</p>
+          <div>
+            <input type="radio" value="Com certeza" name="select" class="radio" />
+              Com certeza
+          </div>
+   
+          <div>
+            <input type="radio" value="Talvez" name="select" class="radio" />
+              Talvez
+          </div>
+ 
+          <div>
+            <input type="radio" value="Não" name="select" class="radio" />
+              Não
+          </div>
+        </label>
+      </div>
+
+      <div>
+        <label for="dropdown">
+          <p>Qual parte é a sua favorita nos estudos?</p>
+          <select id="dropdown" name="opcao">
+            <option>Ler</option>
+            <option>Escrever</option>
+            <option>Práticar</option>
+            <option>Prefiro não dizer</option>
+            <option>Outra parte</option>
+          </select>
+        </label>
+      </div>
+
+      <div>
+        <label>
+          <p>O que você mais gosta de programação? <small>(Pode se marcar mais de uma alternativa)</small></p>
+          <div>
+            <input type="checkbox" name="prefer" value="HTML" id="prefer" />
+              HTML
+          </div> 
+        </label>
+
+        <label>
+          <div>
+            <input type="checkbox" name="prefer" value="CSS" id="prefer" /> 
+              CSS
+          </div>
+        </label>
+
+        <label>
+          <div>
+            <input type="checkbox" name="prefer" value="JavaScript" id="prefer" /> 
+              JavaScript
+          </div>
+        </label>
+     
+        <label>
+          <div>
+            <input type="checkbox" name="prefer" value="Outro" id="prefer" /> 
+              Outro
+          </div>
+        </label>
+      </div>
+
+      <div>
+        <p>Sugestões ou comentários?</p>
+        <textarea id="comments" name="comment" placeholder="Insira sua sugestão aqui" /></textarea>
+      </div>
+
+      <button type="submit" id="submit">Enviar</button>
+    </form>
+  </section>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

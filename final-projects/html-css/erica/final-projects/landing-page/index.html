@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fotografia</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+	background: black;
+	margin: 0;
+}
+#header {
+	display: flex;
+	background: white;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	width: 100%;
+}
+
+#header-img {
+	width: 100%;
+	height: 65px;
+}
+
+#nav-bar {
+	width: 80%;
+	color: white;
+}
+
+ul {
+	width: 90%;
+	justify-content: space-around;
+	display: flex;
+	list-style-type: none;
+}
+
+li {
+	font-size: 20px;
+}
+
+.nav-link {
+	text-decoration: none;
+	color: black;
+}
+
+section > img {
+	width: 100%;
+}
+
+main {
+	display: flex;
+	background: black;
+	justify-content: center;
+	align-items: center;
+}
+
+main > div {
+	display: flex;
+	flex-direction: column;
+	background: white;
+	width: 55%;
+	margin-top: 100px;
+}
+
+#video {
+	width: 100%;
+}
+
+#form {
+	margin: 0;
+	width: 40%;
+}
+
+#submit {
+	width: 18%;
+	height: 35px;
+	border-radius: 7px;
+}
+
+#email {
+	width: 69%;
+	height: 36px;
+	border-radius: 7px;
+	padding-left: 10px;
+}
+
+figure {
+	width: 8%;
+}
+
+h1 {
+	text-align: center;
+}
+
+p {
+	text-align: justify;
+	margin: 0 13px 15px 13px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	background: white;
+	height: 46px;
+	margin-top: 2px;
+}
+
+@media (max-width: 360px) {
+
+ main > div {
+ width: 84%;
+ margin-top: 0;
+}
+
+#header {
+ display: flex;
+ flex-direction: column;
+ position: relative; 
+}
+
+figure {
+ width: 19%;
+}
+
+input {
+ display: none;
+}
+
+#video {
+ height: 170px;
+}
+
+form {
+  display: none;
+}
+
+nav {
+   display: none;		
+}
+
+}
+</style>
+</head>
+
+<body>
+	<header id="header">
+		<figure>
+			<img src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Photo_camera_icon.png" id="header-img" alt="icone">
+		</figure>
+		<nav id="nav-bar">
+			<ul>
+				<a href="#pose1" class="nav-link"><li>Modelagem</li></a>
+				<a href="#pose2" class="nav-link"><li>Modelos na arte</li></a>
+				<a href="#pose3" class="nav-link"><li>Modelos na Moda</li></a>
+			</ul>
+		</nav>
+		<form id="form" action="https://www.freecodecamp.com/email-submit">
+			<label for="email">
+				<input type="email" name="email" id="email" placeholder="Seu e-mail">
+				<input type="submit" value="Enviar" id="submit">
+			</label>
+		</form>
+	</header>
+
+<main>
+	<div>
+		<iframe width="600" height="315" src="https://www.youtube.com/embed/UFZcTPIgBOk" title="YouTube video player" frameborder="0" 	
+		 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video">
+		</iframe>
+	<section>
+		 <h1>Modelagem</h1>
+
+		<p>
+			É considerado diferente de outros tipos de performance pública, tais como atuação ou dança. Embora a diferença entre modelagem e 
+      performance nem sempre seja clara, aparecer em um filme ou uma peça, geralmente, não é considerado ser "modelagem".
+			Tipos de modelagem incluem: moda, glamour, aptidão física, biquíni, belas artes, apenas parte do corpo, modelos promocionais e 
+      comerciais de impressão. Os modelos são apresentados em uma variedade de formatos de mídia, incluindo: livros, revistas, filmes, jornais,
+      internet e TV. Modelos de moda são, por vezes, destaques em filmes (Looker), programas de televisão como reality shows (America's Next 
+      TopModel) e videoclipes ("Freedom! '90", "Wicked Game" e "Blurred Lines").
+		</p>
+
+		 <img src="https://fotografiamais.com.br/wp-content/uploads/2018/08/foto-preto-e-branco-fotografia-preto-e-branco-tecnicas.jpg" 
+      alt="icone" id="pose1">
+		 <h1>Arte</h1>
+			<p>
+			A considerado diferente de outros tipos de performance pública, tais como atuação ou dança. Embora a diferença entre modelagem e 
+		  performance nem sempre seja clara, aparecer em um filme ou uma peça, geralmente, não é considerado ser "modelagem".
+			Tipos de modelagem incluem: moda, glamour, aptidão física, biquíni, belas artes, apenas parte do corpo, modelos promocionais e 
+		  comerciais de impressão. Os modelos são apresentados em uma variedade de formatos de mídia, incluindo: livros, revistas, filmes, jornais,
+			internet e TV. Modelos de moda são, por vezes, destaques em filmes (Looker), programas de televisão como reality shows (America's Next 
+		  TopModel) e videoclipes ("Freedom! '90", "Wicked Game" e "Blurred Lines").
+			</p>
+			<img src="https://i1.wp.com/www.dezoito.pt/wp-content/uploads/2019/01/tumblr_inline_o0tpjh6wkQ1t9bi3m_500.jpg?fit=500%2C360&ssl=1" 
+       alt="icone" id="pose2">
+		 <h1>Moda</h1>
+
+		<p>
+			O considerado diferente de outros tipos de performance pública, tais como atuação ou dança. Embora a diferença entre modelagem e 
+      performance nem sempre seja clara, aparecer em um filme ou uma peça, geralmente, não é considerado ser "modelagem".
+
+			Tipos de modelagem incluem: moda, glamour, aptidão física, biquíni, belas artes, apenas parte do corpo, modelos promocionais e 
+      comerciais de impressão. Os modelos são apresentados em uma variedade de formatos de mídia, incluindo: livros, revistas, filmes, jornais,
+			internet e TV. Modelos de moda são, por vezes, destaques em filmes (Looker), programas de televisão como reality shows (America's Next 
+      TopModel) e videoclipes ("Freedom! '90", "Wicked Game" e "Blurred Lines").
+		</p>
+			<img src="https://besthqwallpapers.com/Uploads/23-3-2017/14742/thumb2-edita-vilkeviciute-portrait-monochrome-beautiful-woman-make-	
+				up.jpg" alt="icone" id="pose3">
+
+		<h1>Profissionalização</h1>
+		<p>
+			É considerado diferente de outros tipos de performance pública, tais como atuação ou dança. Embora a diferença entre modelagem e 
+      performance nem sempre seja clara, aparecer em um filme ou uma peça, geralmente, não é considerado ser "modelagem".
+			Tipos de modelagem incluem: moda, glamour, aptidão física, biquíni, belas artes, apenas parte do corpo, modelos promocionais e 
+      comerciais de impressão. Os modelos são apresentados em uma variedade de formatos de mídia, incluindo: livros, revistas, filmes, jornais,
+      internet e TV. Modelos de moda são, por vezes, destaques em filmes (Looker), programas de televisão como reality shows (America's Next 
+      TopModel) e videoclipes ("Freedom! '90", "Wicked Game" e "Blurred Lines").
+		</p>
+	</section>
+	</div>
+</main>
+
+<footer>
+	<div>© Copyright|2021 Projeto| HTML|</div>
+</footer>
+</body>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>

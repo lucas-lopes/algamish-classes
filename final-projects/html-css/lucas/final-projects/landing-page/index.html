@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algomish Classes</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            height: 200px;
+            background-color: #fbefe2;
+            border-bottom: 5px solid;
+        }
+
+        header > div {
+            margin-top: 100px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        header img {
+            width: 38%;
+            margin-left: 35px;
+            border: 5px solid;
+        }
+
+        nav {
+            position: fixed;
+            width: 100%;
+            background-color: #41552c;
+            border-bottom: 5px solid;
+        }
+
+        nav li {
+            color: #fff;
+            text-transform: uppercase;
+            float: right;
+            padding: 20px;
+        }
+        
+        #about {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px;
+            background-color: #e4c1ac;
+            border-bottom: 5px solid;
+        }
+
+        iframe, p, h2, h3 {
+            padding: 15px;
+        }
+
+        #about p, footer p {
+            padding: 15px 200px;
+            text-align: justify;
+            font-size: 14pt;
+        }
+
+        main > section {
+            justify-content: space-evenly;
+            display: flex;
+            width: 100%;
+        }
+
+        main {
+            background-color: #f1dfd9;
+            padding: 30px;
+            border-bottom: 5px solid;
+        }
+
+        main article {
+            background-color: #fff;
+            margin: 20px;
+            width: 22%;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 2px 2px 5px;
+        }
+
+        article img {
+            width: 100%;
+            height: 190px;
+        }
+
+        article p {
+            text-align: justify;
+        }
+
+        article h3, main h2, main > p {
+            text-align: center;
+        }
+
+        article button {
+            height: 30px;
+            width: 90%;
+            align-self: center;
+            margin-bottom: 10px;
+            background-color: green;
+            border: 1px solid;
+            color: #fff;
+        }
+
+        footer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #41552c;
+            height: 350px;
+            padding: 30px;
+        }
+
+        footer h2 {
+            color: #e4c1ac;
+        }
+
+        footer form {
+            width: 40%;
+            padding: 30px;
+            background-color: #e4c1ac;
+            margin: 20px;
+            box-shadow: 5px 5px 5px;
+            border-radius: 5px;
+        }
+
+        footer input[type='email'] {
+            height: 35px;
+            width: 73%;
+            border-radius: 5px;
+            border: 1px solid;
+            padding-left: 5px;
+        }
+
+        footer input[type='submit'] {
+            height: 35px;
+            border-radius: 5px;
+            border: 1px solid #000;
+            padding: 7px;
+            background-color: #41552c;
+            color: #fff;
+        }
+
+        footer p {
+            color: #fff;
+        }
+
+        @media (max-width: 360px) {
+            form {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div>
+            <figure>
+                <img src="https://i.pinimg.com/originals/e4/3d/c7/e43dc7d491d62147697650e12a074798.jpg" alt="Lion Icon Algomish" id="header-img">
+            </figure>
+    
+            <h1>Algomish Classes</h1>
+        </div>
+
+        <nav id="nav-bar">
+            <a href="#contact" class="nav-link">
+                <li>Contato</li>
+            </a>
+            <a href="#courses" class="nav-link">
+                <li>Cursos</li>
+            </a>
+            <a href="#about" class="nav-link">
+                <li>Sobre Nós</li>
+            </a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>Sobre Nós</h2>
+
+        <p>Com muita didática e metodologias apropriadas para o ensino, é possível através do Algomish Classes aprender os conceitos mais improváveis e imaginados. Com alguns anos de mercado, o grupo Algomish criou o produto Algomish Classes para compartilhar anos de conhecimento através de uma forma simples e mão na massa, que é uma marca registrada do grupo.</p>
+
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/4UBP5pkAf1c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <p>Confira abaixo nossos cursos de extrema qualidade e que tem ajudado milhares de alunos conquistarem seu espaço no mercado de trabalho!</p>
+    </section>
+
+    <main id="courses">
+        <h2>Nossos cursos</h2>
+
+        <p>Nossos alunos nos deram feedback máximo nos cursos que oferecemos. O grupo Algomish tem certeza que você também não vai se arrepender.</p>
+
+        <section>
+            <article>
+                <figure>
+                    <img src="https://tecnoblog.net/wp-content/uploads/2014/10/html5.jpg" alt="HTML5 course">
+                </figure>
+    
+                <div>
+                    <h3>HTML e HTML5 básicos</h3>
+                    <p>HTML é uma linguagem de marcação que usa uma sintaxe ou notação especial para descrever a estrutura de uma página da Web para o navegador. Os elementos HTML geralmente têm tags de abertura e fechamento que os circundam e dão significado ao conteúdo.</p>
+                </div>
+    
+                <button>Saiba Mais</button>
+            </article>
+    
+            <article>
+                <figure>
+                    <img src="https://arquivo.devmedia.com.br/cursos/imagem/curso_o-que-e-css_1970.jpg" alt="CSS3 course">
+                </figure>
+    
+                <div>
+                    <h3>CSS básico</h3>
+                    <p>O CSS, ou Folhas de Estilo em Cascata, diz ao navegador como exibir o texto e outros conteúdos que você escreve em HTML. Com o CSS, você pode controlar a cor, fonte, tamanho, espaçamento e muitos outros aspectos dos elementos HTML. Conheça já este novo curso.</p>
+                </div>
+    
+                <button>Saiba Mais</button>
+            </article>
+    
+            <article>
+                <figure>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png" alt="JS course">
+                </figure>
+    
+                <div>
+                    <h3>JavaScript básico</h3>
+                    <p>JavaScript is a scripting language you can use to make web pages interactive. It is one of the core technologies of the web, along with HTML and CSS, and is supported by all modern browsers. Conheça já este novo curso e caso não goste nós garantimos retorno.</p>
+                </div>
+    
+                <button>Saiba Mais</button>
+            </article>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <h2>Contato</h2>
+
+        <p>Se você chegou até aqui é porque gostou dos nossos cursos e da ideia que a Algomish Classes de levar educação tecnológica para a maioria das pessoas. Tudo isso de forma simples, com metodologia e custo bastante acessível.</p>
+
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+            <label for="email">
+                <input type="email" name="email" id="email" placeholder="Qual é seu melhor e-mail?">
+            </label>
+
+            <input type="submit" value="Receber Novidades" id="submit">
+        </form>
+
+        <p>Vamos te enviar apenas aquilo que pode mudar sua vida! Por isso gostaríamos de manter contato, pois gostamos de você e te avisaremos de tudo de legal que estamos fazendo.</p>
+    </footer>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

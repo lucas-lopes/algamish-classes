@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            outline: none;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            background-color: #d03b3a;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            background-color: #d03b3a;
+            height: 120px;
+            color: #fff;
+        }
+
+        main {
+            width: 70%;
+            background-color: #dddddd;
+            box-shadow: 3px -3px 5px;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        #number {
+            margin-left: 3px;
+        }
+
+        [type="text"], [type="email"], [type="number"] {
+            width: 93%;
+            height: 30px;
+            border-radius: 5px;
+            border: 1px solid #f2f2f2;
+            padding-left: 5px;
+            margin-bottom: 5px;
+        }
+
+        select {
+            width: 98.5%;
+            height: 35px;
+            border-radius: 5px;
+            border: 1px solid #f2f2f2;
+            padding-left: 5px;
+            margin-bottom: 5px;
+        }
+
+        label, form p, legend, header p {
+            font-size: 14pt;
+        }
+
+        form {
+            margin-top: 15px;
+        }
+
+        form p {
+            margin: 10px 0;
+        }
+
+        fieldset {
+            padding: 10px;
+            border: 2px solid;
+            margin-bottom: 15px;
+        }
+
+        legend {
+            font-weight: bold;
+            padding: 0 10px;
+        }
+
+        input[type="checkbox"] {
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            width: 50%;
+            height: 35px;
+            background-color: green;
+            color: #fff;
+            font-weight: bold;
+            text-transform: uppercase;
+            border: 1px solid #000;
+        }
+
+        textarea {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="title">Queremos te ouvir!</h1>
+        <p id="description">A sua opinião é muito valiosa para nós, portanto nos ajude a escolher o melhor jogador do mundo para o prêmio de 2021.</p>
+    </header>
+
+    <div class="container">
+        <main>
+            <h2>SUA VEZ DE VOTAR</h2>
+
+            <form action="#" id="survey-form">
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <div>
+                        <label for="name" id="name-label">Nome
+                            <input type="text" name="name" id="name" placeholder="Qual é o seu nome?" required>
+                        </label>
+                    </div>
+    
+                    <div>
+                        <label for="email" id="email-label">Email
+                            <input type="email" name="email" id="email" placeholder="Qual é o seu melhor e-mail?" required>
+                        </label>
+                    </div>
+    
+                    <div>
+                        <label for="age" id="number-label">Idade
+                            <input type="number" name="age" id="number"  placeholder="Qual é a sua idade?" min="1" max="3">
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Qual desses jogadores deveria estar na lista?</legend>
+                    <select name="best-player" id="dropdown">
+                        <option value="Neymar">Neymar</option>
+                        <option value="Tiririca">Tiririca</option>
+                        <option value="Severino">Severino do Balde</option>
+                        <option value="Marta">Marta</option>
+                        <option value="Ronaldo">Ronaldo Fenômeno</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Você concorda com as premiações do ano de 2020?</legend>
+                    <label for="previous-best-players">
+                        <input type="radio" name="previous-best-players" value="Sim">Sim
+                        <input type="radio" name="previous-best-players" value="Não">Não
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Qual(is) dos seguinte(s) jogadores você gostaria de conhecer?</legend>
+                    <label for="would-like-to-know">
+                        <input type="checkbox" name="neymar" value="Neymar">Neymar
+                        <br><input type="checkbox" name="messi" value="Messi">Messi
+                        <br><input type="checkbox" name="cr7" value="CR7">Cristiano Ronaldo
+                        <br><input type="checkbox" name="marta" value="Marta">Marta
+                        <br><input type="checkbox" name="ronaldo" value="Ronaldo">Ronaldo Fenômeno
+                    </label>
+                </fieldset>
+
+                <p>Por que você acha que o jogador escolhido por você merece o prêmio de melhor jogador do mundo de 2021?</p>
+                <textarea name="letter" id="letter" cols="83" rows="10"></textarea><br>
+
+                <input type="submit" id="submit" value="Votar">
+            </form>
+        </main>
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

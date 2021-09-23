@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lucy Maud Montgomery</title>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="CSS, HTML">
+  <meta name"author" content="heloisa lopes">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+    }
+
+    body {
+      background-color: #bbe5fc;
+    }
+
+    header {
+      background-color: #033753;
+      height: 60px;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      grid-area: header;
+    }
+
+    header > h2 {
+      color: #FFF;
+      font-size: 21pt;
+      font-family: monospace;
+    }
+
+    #title {
+      margin-bottom: 13px;
+    }
+
+    #title > h1 {
+      margin-top: 13px;
+    }
+
+    #title, #title > p {
+      justify-content: center;
+      display: grid;
+    }
+
+    #main {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: 
+        "header header"
+        "main main"
+        "footer footer";
+    }
+
+    main {
+      margin-top: 12px;
+      background-color: #FFF;
+      margin: 0 43px;
+      padding-bottom: 34px;
+      grid-area: main;
+    }
+
+    aside > img {
+      height: 204px;
+      width: 151px;
+      margin-right: 25px;
+    }
+  
+    aside {
+      background-color: #ecf7fe;
+      display: flex;
+      justify-content: center;
+    }
+
+    .book-photo {
+      margin-right: 0;
+    }  
+
+    #tribute-info {
+      margin: 21px 31px 0;
+    }
+
+    #tribute-info > h2 {
+      margin: 20px 0 5px;
+      font-size: 18pt;
+      font-family: system-ui;
+    }
+
+    #tribute-info > p {
+      margin-bottom: 16px;
+      text-align: justify;
+      font-size: 14pt;
+    }
+
+    #img-div {
+      display: grid;
+      justify-content: center;
+    } 
+
+    #image {
+      max-width: 650px;
+    }
+
+    #img-caption {
+      margin-top: 2px;
+    }
+
+    section {
+      margin: 36px 0 0 23px;
+      font-size: 12pt;
+      font-family: monospace;
+    }
+
+    footer {
+      background-color: #033753;
+      height: 87px;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      color: #FFF;
+      font-family: sans-serif;
+      font-size: 10pt;
+      grid-area: footer;
+    }
+  </style>
+</head>
+<body>
+  <div id="main">
+    <header>
+      <h2>homenagem.com</h2>
+    </header>
+
+    <main>
+      <div id="title">
+        <h1>Lucy Maud Montgomery</h1>
+        <p>Autora dos livros Anne</p>
+      </div>
+
+      <aside>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNZ4mM5sLS71IEnUCtLnUt06qgKLn2OcQhcA&usqp=CAU" alt="Livro Anne de Windy Poplars">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEzWPEqQucZ6hWJ7PfIwKGnPhNeYODz7vKxw&usqp=CAU" alt="Livro Anne de Green Gables">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv5gYaJmZA-tLP9S1fUq3A-g2UX_DFNhp8gA&usqp=CAU" alt="Livro Anne de Anvolea">
+        <img src="https://m.media-amazon.com/images/I/517QsmrPEwL.jpg" alt="Anne de Ingleside" class="book-photo">
+      </aside>
+
+      <article id="tribute-info">
+        <h2>Sobre Lucy M. Montgomery</h2>
+        <p>Lucy Maud Montgomery foi uma autora canadense com raízes na Escócia. Nasceu em Clifton, no Canadá, em 1874. Ela perdeu a mãe muito jovem e foi criada pelos avós maternos. Ela começou a fazer um diário e descobriu aos 10 (dez) anos de idade que sabia escrever poesia. Depois da faculdade, ela se tornou professora, mas continuou escrevendo.</p>
+
+        <h2>Carreira Literária</h2>
+        <p>Em 1908, Montgomery publicou seu primeiro livro, Anne of Green Gables. Três anos depois, logo após a morte da avó, ela se casou com Ewan (encontrado nas notas e cartas de Montgomery como "Ewan") Macdonald (1870-1943), um ministro presbiteriano, e se mudaram para Ontário, onde ele tinha assumido o cargo de ministro de “St. Paul's Presbyterian Church”, em Leaskdale na atual [Uxbridge]], Ontário, também afiliada à congregação próxima a Zephyr (Ontário). Tiveram três filhos, o segundo dos quais nasceu morto. Os dois outros eram Chester e Stuart.</p>
+
+        <p>O grande aumento de seus escritos em Leaskdale é o resultado de sua necessidade de escapar das dificuldades da vida real. Montgomery sofreu vários períodos de depressão, enquanto tentava lidar com os deveres da maternidade e da vida religiosa, e com os ataques de melancolia religiosa do marido e deterioração da saúde: "Para uma mulher que tinha dado ao mundo a alegria, foi principalmente uma infeliz". Para a maior parte de sua vida, sua escrita foi um grande consolo. Além disso, durante esse tempo, Montgomery esteve envolvida em uma série de "amargas ações com a editora L.C. Page, que se arrastaram até que ela finalmente ganhou a causa, em 1929".</p>
+
+        <p>Em 1935, após a aposentadoria do marido, Montgomery mudou-se para Swansea, um subúrbio de Toronto, onde compraram uma casa a que chamaram “Journey's End”, situada em Humber River. Montgomery continuou a escrever, publicando Anne of Windy Poplars em 1936, Jane of Lantern Hill em 1937, e Anne of Ingleside em 1939.</p>
+
+        <p>No ultimo ano de sua vida, Montgomery completou o nono livro com Anne, intitulado The Blythes Are Quoted, que inclui 15 histórias curtas, muitas delas previamente publicadas, que ela revisou para incluir Anne e sua família, principalmente como personagens periféricos; quarenta e um poemas (muitos dos quais publicados anteriormente), que ela atribuiu a Ana e seu filho Walter, que morreu como um soldado na Primeira Guerra Mundial, e com vinhetas da família Blythe discutindo os poemas. Uma versão resumida, em que foram resumidas e reorganizadas as histórias e omitidas todas as vinhetas foi publicada como uma coleção de histórias curtas, The Road to Yesterday, em 1974. Uma edição completa de The Blythes Are Quoted, editada por Benjamin Lefebvre, foi publicado na íntegra pela Viking Canadá, em outubro de 2009.</p>
+      </article>
+
+      <div id="img-div">
+        <img src="https://images.greelane.com/proxy?url=https%3A%2F%2Fwww.thoughtco.com%2Fthmb%2FX6_4XUgsaDujdYFmdZygTXEEans%3D%2F800x590%2Ffilters%3Afill%28auto%2C1%29%2FLMM_signed_photo-5c61940146e0fb000127cae1.jpg&width=750" alt="Lucy Maud Montgomery" id="image">
+        <span id="img-caption"><i>Lucy Maud Montgomery em um retrato, sentada, com chapéu e óculos de grau.</i></span>
+      </div>
+
+      <section> 
+        <p>Saiba mais sobre Lucy Maud Montgomery:</p>
+<a href="https://pt.wikipedia.org/wiki/L._M._Montgomery#:~:text=Lucy%20Maud%20Montgomery%20nasceu%20em,30%20de%20novembro%20de%201874.&text=Em%20novembro%20de%201890%2C%20Montgomery,Prince%20Edward%20Island%2C%20em%201891." id="tribute-link" target="_blank"><mark style="background-color: yellow;">Clique aqui</mark></a>
+      </section>
+    </main>
+
+    <footer><h2>Desenvolvido por Heloísa Lopes</h2></footer>
+  </div>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        #container {
+            display: grid;
+            grid-template-columns: 30% 1fr;
+        }
+
+        li {
+            margin: 10px;
+        }
+
+        #main-title {
+            background-color: #0b0b73;
+            color: #FFF;
+            font-family: sans-serif;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #navbar {
+            background-color: #000;
+            color: lawngreen;
+            border: 2px solid #fff;
+        }
+
+        #navbar h2 {
+            text-align: center;
+            border: 1px solid #fff;
+            border-top: 0;
+            padding: 10px;
+        }
+
+        ol {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        a {
+            border: 1px solid #fff;
+            height: 80px;
+            color: lawngreen;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #main-doc {
+            background-color: black;
+            color: lawngreen;
+            border: 2px solid #fff;
+            border-left: 0 solid #fff;
+        }
+
+        .main-section {
+            border-bottom: 2px solid #fff;
+            padding: 10px;
+        }
+
+        .main-section h2 {
+            text-align: center;
+        }
+
+        .main-section h3 {
+            color: lawngreen;
+        }
+
+        .main-section p {
+            color: #fff;
+            margin: 15px;
+            font-size: 14pt;
+            text-align: justify;
+            font-family: sans-serif;
+        }
+
+        .main-section ul {
+            padding-inline-start: 40px;
+        }
+
+        .main-section li {
+            list-style: circle;
+            color: #fff;
+        }
+
+        @media (max-width: 380px) {
+            nav {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="main-title">
+        <h1>Documentação do Desenvolvedor Back-end</h1>
+    </header>
+
+    <div id="container">
+        <nav id="navbar">
+            <header>
+                <h2>Menu Rápido</h2>
+            </header>
+    
+            <ol>
+                <a href="#java_core" class="nav-link">
+                    <li>Java Core</li>
+                </a>
+                <a href="#java_8" class="nav-link">
+                    <li>Java 8</li>
+                </a>
+                <a href="#spring_framework" class="nav-link">
+                    <li>Spring Framework</li>
+                </a>
+                <a href="#sql" class="nav-link">
+                    <li>SQL</li>
+                </a>
+                <a href="#git" class="nav-link">
+                    <li>GIT</li>
+                </a>
+                <a href="#estrutura_de_dados" class="nav-link">
+                    <li>Estrutura de Dados</li>
+                </a>
+            </ol>
+        </nav>
+    
+        <main id="main-doc">
+            <section class="main-section" id="java_core">
+                <header>
+                    <h2>Java Core</h2>
+                </header>
+    
+                <p>Java é uma linguagem de programação orientada a objetos desenvolvida na década de 90 por uma equipe de programadores chefiada por James Gosling, na empresa Sun Microsystems. Em 2008 o Java foi adquirido pela empresa Oracle Corporation. Diferente das linguagens de programação modernas, que são compiladas para código nativo, a linguagem Java é compilada para um bytecode que é interpretado por uma máquina virtual (Java Virtual Machine, mais conhecida pela sua abreviação JVM).</p>
+                
+                <p>A linguagem de programação Java é a linguagem convencional da Plataforma Java, mas não é a sua única linguagem. J2ME Para programas e jogos de computador, celular, calculadoras, ou até mesmo o rádio do carro.</p>
+    
+                <h3>Assuntos importantes para estudar</h3>
+    
+                <ul>
+                    <li>Threads</li>
+                    <li>Exceptions checked, unchecked</li>
+                    <li>Collections (Concept and complexity O)</li>
+                    <li>Equals e hashCode</li>
+                    <li>Overloading vs Overriding</li>
+                    <li>Object Reflection</li>
+                </ul>
+    
+                <code></code>
+            </section>
+    
+            <section class="main-section" id="java_8">
+                <header>
+                    <h2>Java 8</h2>
+                </header>
+    
+                <p>O Java 8 é a release mais recente do Java que contém novas funcionalidades, aprimoramentos e correções de bug para aumentar a eficiência do desenvolvimento e execução de programas Java. A nova release do Java primeiro é disponibilizada para desenvolvedores, a fim de permitir um tempo adequado de teste e certificação, e só então fica disponível no site java.com para que usuários finais façam download.</p>
+
+                <p>Alguns provedores de aplicações podem exigir que você use uma determinada release do Java e não certificaram as aplicações deles no Java 8. Se você tiver problemas para executar uma aplicação com o Java 8, consulte seu provedor de aplicações e confirme se ela foi certificada nessa versão.</p>
+    
+                <h3>Assuntos importantes para estudar</h3>
+    
+                <ul>
+                    <li>Lambda</li>
+                    <li>Functional Interfaces</li>
+                    <li>Default Methods</li>
+                    <li>Ordenação</li>
+                    <li>Method References </li>
+                    <li>Stream e Collectors</li>
+                </ul>
+    
+                <code></code>
+            </section>
+    
+            <section class="main-section" id="spring_framework">
+                <header>
+                    <h2>Spring Framework</h2>
+                </header>
+    
+                <p>O Spring é um framework open source para a plataforma Java criado por Rod Johnson e descrito em seu livro "Expert One-on-One: JEE Design e Development". Trata-se de um framework não intrusivo, baseado nos padrões de projeto inversão de controle (IoC) e injeção de dependência.</p>
+
+                <p>No Spring o container se encarrega de "instanciar" classes de uma aplicação Java e definir as dependências entre elas através de um arquivo de configuração em formato XML, inferências do framework, o que é chamado de auto-wiring ou ainda anotações nas classes, métodos e propriedades. Dessa forma o Spring permite o baixo acoplamento entre classes de uma aplicação orientada a objetos.</p>
+    
+                <h3>Assuntos importantes para estudar</h3>
+    
+                <ul>
+                    <li>Scope</li>
+                    <li>Arquivo de configuração</li>
+                    <li>Injeção de dependência</li>
+                    <li>Inversão de controle</li>
+                    <li>Beans</li>
+                </ul>
+    
+                <code></code>
+            </section>
+    
+            <section class="main-section" id="sql">
+                <header>
+                    <h2>SQL</h2>
+                </header>
+    
+                <p>Structured Query Language, ou Linguagem de Consulta Estruturada ou SQL, é a linguagem de pesquisa declarativa padrão para banco de dados relacional (base de dados relacional). Muitas das características originais do SQL foram inspiradas na álgebra relacional.</p>
+                
+                <p>O SQL foi desenvolvido originalmente no início dos anos 70 nos laboratórios da IBM em San Jose, dentro do projeto System R, que tinha por objetivo demonstrar a viabilidade da implementação do modelo relacional proposto por E. F. Codd. O nome original da linguagem era SEQUEL, acrônimo para "Structured English Query Language" (Linguagem de Consulta Estruturada, em Inglês),[1] vindo daí o facto de, até hoje, a sigla, em inglês, ser comumente pronunciada "síquel" ao invés de "és-kiú-él", letra a letra. No entanto, em português, a pronúncia mais corrente é letra a letra: "ésse-quê-éle".</p>
+    
+                <h3>Assuntos importantes para estudar</h3>
+    
+                <ul>
+                    <li>Database Constraints</li>
+                    <li>Transactions (ACID)</li>
+                    <li>Indexes</li>
+                    <li>Join</li>
+                    <li>Queries</li>
+                    <li>Database Administration</li>
+                    <li>Denormalized x Normalized Databases</li>
+                </ul>
+    
+                <code></code>
+            </section>
+    
+            <section class="main-section" id="git">
+                <header>
+                    <h2>GIT</h2>
+                </header>
+    
+                <p>Git pronuncia-se /git/ (ou /ɡɪt/ em inglês britânico[1][2]) é um sistema de controle de versões distribuído, usado principalmente no desenvolvimento de software, mas pode ser usado para registrar o histórico de edições de qualquer tipo de arquivo (Exemplo: alguns livros digitais são disponibilizados no GitHub e escrito aos poucos publicamente). O Git foi inicialmente projetado e desenvolvido por Linus Torvalds para o desenvolvimento do kernel Linux, mas foi adotado por muitos outros projetos.</p>
+                
+                <p>O Git é um software livre, distribuído sob os termos da versão 2 da GNU General Public License. Sua manutenção é atualmente supervisionada por Junio Hamano.</p>
+    
+                <h3>Assuntos importantes para estudar</h3>
+    
+                <ul>
+                    <li>Comandos Básicos</li>
+                    <li>Pull Request</li>
+                    <li>Branch</li>
+                    <li>Git Flow</li>
+                    <li>Repositório</li>
+                </ul>
+    
+                <code></code>
+            </section>
+
+            <section class="main-section" id="estrutura_de_dados">
+                <header>
+                    <h2>Estrutura de Dados</h2>
+                </header>
+    
+                <p>Uma estrutura de dados (ED), em ciência da computação, é uma coleção tanto de valores (e seus relacionamentos) quanto de operações (sobre os valores e estruturas decorrentes). É uma implementação concreta de um tipo abstrato de dado (TAD) ou um tipo de dado (TD) básico ou primitivo. Assim, o termo ED pode ser considerado sinônimo de TD, se considerado TAD um hipônimo de TD, isto é, se um TAD for um TD.</p>
+
+                <p>Em termos de EDs, os TDs e TADs são definidos indiretamente pelas operações e usos, e propriedades destas operações e usos: e.g. o custo computacional e o espaço que pode representar e ocupa na memória.</p>
+    
+                <h3>Assuntos importantes para estudar</h3>
+    
+                <ul>
+                    <li>List</li>
+                    <li>Queue</li>
+                    <li>Set</li>
+                    <li>Map</li>
+                    <li>ArrayList</li>
+                    <li>LinkedList</li>
+                    <li>Bynary Search</li>
+                </ul>
+    
+                <code></code>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

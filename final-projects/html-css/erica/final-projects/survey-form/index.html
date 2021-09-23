@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Formulário</title>
+	<meta charset="UTF-8">
+	<meta name="descripiton" content="Free webwhatsapp">
+	<meta name="keywords" content="CSS, HTML">
+	<meta neme="author" content="erica roque">
+<style>
+body {
+	background-image:  radial-gradient(circle at 50% -20.71%, #c24f57 0, #c0465c 8.33%, #bc3c60 16.67%, #b63064 25%, #af2469 33.33%, #a6156e 		41.67%, #9a0073 50%, #8c0078 58.33%, #7c007f 66.67%, #6a0085 75%, #53068c 83.33%, #321492 91.67%, #001d98 100%);
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#survey-form {
+	background-color: #1c1d1c85;
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+	height: 955px;
+	align-items: center; 
+}
+
+#title {
+	text-align: center;
+	color: white;
+}
+
+#description {
+	text-align: justify;
+	color: #f3f0f0;
+	font-size: 18px;
+	font-weight: 600;
+	width: 68%;
+	margin-bottom: 32px;
+	line-height: 2;
+}
+
+#name, #email, #number, #dropdown, textarea, #submit {
+	width: 100%;
+	height: 44px;
+	border-radius: 6px;
+	background-color: #dddddd;
+	padding-left: 10px;
+}
+
+textarea {
+	width: 100%;
+	height: 122px;
+	background-color: #dddddd;
+}
+
+#submit {
+	width: 100%;
+	height: 48px;
+	margin-top: 10px;
+	background-color: #dddddd;
+}
+
+fieldset {
+	border: 0;
+	display: flex;
+	flex-direction: column;
+	width: 85%;
+	margin-top: 33px;
+}
+
+label, spam {
+	color: white;
+	line-height: 2;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+spam {
+ 	margin: 8px 0 6px 0px;
+}
+
+#dropdow {
+	display: flex;
+	flex-direction: row;
+}
+
+#femenino, #masculino {
+	margin: 15px 15px 0 4px;
+}
+</style>	
+</head>
+
+<body>
+
+	<main>
+		 <header>
+		 <h1 id="title">Formulário de Candidatura de Emprego</h1>
+		</header>
+		 
+		 <p id="description">
+		 Roteiro de entrevista de emprego é um guia estruturado de perguntas predefinidas que os recrutadores utilizam para realizar as 		entrevistas de 
+		 candidatos. Assim, podendo ter o tempo otimizado, e conseguir resultados comparáveis, o que facilita na escolha do candidato finalista.
+		</p>
+
+		<form id="survey-form">
+			<fieldset>
+			 <label for="name-label" id="name-label">Nome:
+			 	<input type="text" name="name2" id="name" placeholder="Seu nome" required>
+			</label>
+
+			 <label for="email-label" id="email-label">E-mail:
+			 	<input type="email" name="email" id="email" placeholder="Seu e-mail" required>
+			</label>
+
+			 <label for="number-label" id="number-label">Idade:
+			 	<input type="number" name="number" id="number" placeholder="Idade" min="18" max="50">
+			</label>
+		<div>
+			 <label for="femenino">Femenino</label>
+			 <input type="radio" id="femenino" name="ordem" value="femenino">
+
+			 <label for="masculino">Masculino</label>
+			 <input type="radio" id="masculino" name="ordem" value="masculino">
+		</div>
+		 <label for="cidade">Campo obrigatório</label>
+
+		 <select id="dropdown" name="cidade">
+			<option value="Selecione">Selecione a opções</option>
+			<option value="São paulo">São Paulo</option>
+			<option value="Rio grande do norte">Rio grande do norte</option>
+			<option value="curitiba">Curtiba</option>
+		</select>
+
+		 <spam>Qual a sua especialidade:</spam>
+		 <label for="Programação">
+		 <input type="checkbox" id="Programação" name="Programação" value="Assistente programação">Programação</label>
+
+		 <label for="Suporte técnico">
+		 <input type="checkbox" id="Suporte técnico" name="Suporte técnico" value="Assistente suporte">Suporte técnico</label>
+		 
+		<label for="Administração de banco de dados">
+		 <input type="checkbox" id="Administração de banco de dados" name="Administração de banco de dados" value="Assistente 				
+     administrativo">Administração de banco de dados</label>
+		 
+		<label for="Administração de redes">
+		 <input type="checkbox" id="Administração de redes" name="Administração de redes" value="Assistente redes">	
+			Administração de 	redes</label>
+		 
+		<label for="Qualidade de software">
+		 <input type="checkbox" id="Qualidade de software" name="Qualidade de software" value="Assistente software">
+			Qualidade de software</label>
+
+		 <label for="menssagem">Deixe uma messagem:</label>
+		 <textarea id="mensagem" name="menssagem" rows="4" cols="50">Digite sua mensagem...</textarea>
+
+			<input type="submit" value="Enviar" id="submit">
+		</fieldset>
+		</form>
+	</main>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
