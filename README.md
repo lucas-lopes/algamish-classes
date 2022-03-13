@@ -1,4 +1,4 @@
-# Algamish Classes
+# Algomish Classes
 
 A educação muda aquele que bebe dessa água.
 
